@@ -9,15 +9,15 @@ object Main {
     }
 
   private def runCli(products: List[Product]): Unit = while (true) {
-      println((new MenuComposer(products)).compose)
-      scala.io.StdIn.readLine(
-        "Not satisfied? Hit any key to try another random menu composition out!"
+      val input = scala.io.StdIn.readLine(
+        "How many kcal do you need ?"
       )
+      println((new MenuComposer(products, input.toInt)).compose)
     }
 
 }
 
-class MenuComposer(products: List[Product]) {
+class MenuComposer(products: List[Product], nb_kcal:Int) {
 
   private def getRandomProducts(howMany: Int): List[Product] = {
     products.length match {
@@ -29,20 +29,21 @@ class MenuComposer(products: List[Product]) {
   }
 
   def compose: String = {
-    val randomProducts = getRandomProducts(3)
+    val randomProducts = getRandomProducts(4)
     println("----- I will try assembling the following products:")
     (0 until 3).foreach(i => println(f"--- $i --- " + randomProducts(i)))
 
-    if (randomProducts.map(_.quality).foldLeft(0.0)(_ + _) <= 1)
-      "The three selected products are delicious together and form a healthy meal!"
+    if (randomProducts.map(_.energy).foldLeft(0.0)(_ + _) >= nb_kcal)
+      "The 4 selected products are at least --- kcal"
     else
-      "Beurk! never eat those together, it's either too fat, too sugarry or both..."
+      "The 4 selected products are less than --- kcal"
   }
 }
 
-case class Product(id: Int, name: String, energy: Int, protein: Float) {
+case class Product(id: Int, name: String, new_energy: Int, new_protein: Float) {
 
-  def quality: Double = if (energy < 30) 0.3 else if (protein > 20) 0.2 else 0.6
+  def energy: Int = new_energy
+  def protein : Float = new_protein
 
   override def toString: String = f"$name (${id.toString})"
 }
