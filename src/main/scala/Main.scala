@@ -16,6 +16,11 @@ object Main {
     }
 }
 
+abstract class Menu
+class RandomMenu(nb_ingredients:Int) extends Menu
+class HealthyMenu(nb_ingredients:Int, value_sugar:Float) extends Menu
+class SimpleBalancedMenu() extends Menu
+
 class MenuComposer(products: List[Product], nb_kcal:Int) {
 
   // ANONYMOUS FUNCTIONS
