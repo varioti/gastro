@@ -9,11 +9,14 @@ object Main {
     }
 
   private def runCli(products: List[Product]): Unit = {
+    // Print all menu available 
     println("Choices:") 
     println(" [1]: Menu composed by 3 healthy ingredients")
     println(" [2]: Menu composed by 1 proteined ingredient and 2 others ingredients")
     println(" [3]: Menu composed by 1 balanced ingredient (25% proteins - 40% glucids - 35% lipids)")
     println(" [4]: Menu composed by 3 random ingredients")
+    
+    // Loop : ask wich menu user want and print a proposal menu 
     while (true) {
       val input = scala.io.StdIn.readLine("What menu do you want ?")
       MenuComposer(products, input.toString).compose
@@ -21,6 +24,8 @@ object Main {
   }
 }
 
+// TRAIT, CASE CLASSES AND HIERARCHY
+/*Each menu has a list of products and a method show*/
 trait Menu {
   def menu: List[Product]
 
