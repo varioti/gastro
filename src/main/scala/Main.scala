@@ -120,29 +120,31 @@ case class MenuComposer(products: List[Product], choice: Any) {
       case _ => Nil
     }
   }
-
+  
+  /* Generates the correct type of menu depending of the choice of the user */
   private def getMenu(choice: Any): Menu = {
     // PATTERN MATCHING
-    // Generates the correct type of menu depending of the choice of the user
     choice match {
       case "1" => HealthyMenu(getHealthyProducts(3,5,8),3,5,8)
-      case "2" => ProteinMenu((getProteinProduct(1,20) ++ getRandomProducts(2)),2,20)
+      case "2" => ProteinMenu((getProteinProduct(1,20) ++ getRandomProducts(2)),2,20) //Protein menu composed of 1 proteined product and 2 random products
       case "3" => SimpleBalancedMenu(getBalancedProducts(3))
-      case _ => RandomMenu(getRandomProducts(3),3) // Default (in case user enter an other thing than 1,2,3 or 4)
+      case _ => RandomMenu(getRandomProducts(3),3) // Default (in case user enter other thing than 1,2,3 or 4)
     }
   }
 
+  /* Generates the menu and shows it */
   def compose: Unit = {
     val menu = getMenu(choice)
     menu.show
   }
 }
 
+/* Represents a product with needed parameters for the composer */
 case class Product(id: Int, name: String, energy: Int, protein: Float,  sugar: Float, fat: Float) {
-
   override def toString: String = f"$name [${id.toString}]"
 }
 
+/* Extracts the products from the file */
 object GastroExtractor {
 
   def extract(path: String): Either[Throwable, List[Product]] =
@@ -151,12 +153,12 @@ object GastroExtractor {
         line <- source.getLines.drop(1)
         cols = line.split(";")
       } yield Product(
-        cols(0).toInt,
-        cols(1),
-        cols(4).toInt,
-        cols(5).toFloat,
-        cols(6).toFloat,
-        cols(9).toFloat
+        cols(0).toInt,      // id
+        cols(1),            // name
+        cols(4).toInt,      // energy (in kcal)
+        cols(5).toFloat,    // toal protein (in g)
+        cols(6).toFloat,    // total sugar (in g)
+        cols(9).toFloat     // total fat (in g)
       )).toList
     }.toEither
 }
