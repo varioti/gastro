@@ -25,7 +25,8 @@ object Main {
 }
 
 // TRAIT, CASE CLASSES AND HIERARCHY
-/*Each menu has a list of products and a method show*/
+/* Each menu has a list of products and a method show used to print 
+   the ingredients and compute the total energy of the menu*/
 trait Menu {
   def menu: List[Product]
 
@@ -37,6 +38,8 @@ trait Menu {
   }
 }
 
+/* Case classes rewriting the toString method to show 
+   the relevant informations of the specific menu */
 case class RandomMenu(menu:List[Product], nb_ingredients:Int) extends Menu {
   override def toString: String = f"----- Random menu of ${nb_ingredients.toString} ingredients:"
 }
@@ -53,11 +56,17 @@ case class SimpleBalancedMenu(menu:List[Product]) extends Menu {
   override def toString: String = "----- Menu with 1 balanced ingredient (25% proteins - 40% glucids - 35% lipids)"
 }
 
+/* Class which composes the menu depending on the user choice, 
+   adds the ingrdients in a Menu class and then prints it*/
 case class MenuComposer(products: List[Product], choice: Any) {
 
   // ANONYMOUS FUNCTIONS
+  /* Compares a value to a refvalue with an approximation factor
+     True if refvalue - approximation <= value <= refvalue + approximation 
+     False otherwise */
   var isApproximate = (value:Float, refvalue:Float, approximation:Float) => (value <= refvalue + approximation && value >= refvalue - approximation)
 
+  /* Returns a list of <howMany> random products */
   private def getRandomProducts(howMany: Int): List[Product] = {
     products.length match {
       case n if n > 0 =>
@@ -66,17 +75,23 @@ case class MenuComposer(products: List[Product], choice: Any) {
     }
   }
 
+  /* Returns a list of <howMany> balanced products 
+     Balaned product has this ratio (25% proteins - 40% glucides - 35% lipids)
+     with an approx factor of 5% */
   private def getBalancedProducts(howMany: Int): List[Product] = {
+    val approx = 0.05
     products.length match {
       case n if n > 0 =>
         // COMPREHENSION LIST
         val bal_products = for {
           product <- products
-          totalNutr = product.protein + product.sugar + product.fat 
-          if (isApproximate(product.protein/totalNutr,0.25.toFloat,0.1.toFloat) && 
-            isApproximate(product.sugar/totalNutr,0.4.toFloat,0.1.toFloat) && 
-            isApproximate(product.fat/totalNutr,0.35.toFloat,0.05.toFloat)) 
+          totalNutr = product.protein + product.sugar + product.fat // Computes the total of nutriments to compute after the ratio 
+          // Keeps products where each nutriment respect approximatively the percents values
+          if (isApproximate(product.protein/totalNutr,0.25.toFloat,approx.toFloat) && 
+            isApproximate(product.sugar/totalNutr,0.4.toFloat,approx.toFloat) && 
+            isApproximate(product.fat/totalNutr,0.35.toFloat,approx.toFloat)) 
         } yield product
+        // Chooses <howMany> random balanced products in this list
         for { _ <- List.range(0, howMany) } yield bal_products(Random.between(0, bal_products.length))
       case _ => Nil
     }
@@ -86,7 +101,9 @@ case class MenuComposer(products: List[Product], choice: Any) {
     products.length match {
       case n if n > 0 =>
         // FILTER FUNCTION
+        // Keeps products where the amount of protein is more than <min_protein>
         val protein = products.filter(p=>(p.protein > min_protein))
+        // Chooses <howMany> random proteined products in this list
         for { _ <- List.range(0, howMany) } yield protein(Random.between(0, protein.length))
       case _ => Nil
     }
@@ -96,18 +113,22 @@ case class MenuComposer(products: List[Product], choice: Any) {
     products.length match {
       case n if n > 0 =>
         // FILTER FUNCTION
+        // Keeps products where the amount of sugar and fat is less than <max_sugar> and <max_fat> 
         val healthy = products.filter(p=>(p.sugar < max_sugar && p.fat < max_fat))
+        // Chooses <howMany> random healthy products in this list
         for { _ <- List.range(0, howMany) } yield products(Random.between(0, healthy.length))
       case _ => Nil
     }
   }
 
   private def getMenu(choice: Any): Menu = {
+    // PATTERN MATCHING
+    // Generates the correct type of menu depending of the choice of the user
     choice match {
       case "1" => HealthyMenu(getHealthyProducts(3,5,8),3,5,8)
       case "2" => ProteinMenu((getProteinProduct(1,20) ++ getRandomProducts(2)),2,20)
       case "3" => SimpleBalancedMenu(getBalancedProducts(3))
-      case _ => RandomMenu(getRandomProducts(3),3)
+      case _ => RandomMenu(getRandomProducts(3),3) // Default (in case user enter an other thing than 1,2,3 or 4)
     }
   }
 
