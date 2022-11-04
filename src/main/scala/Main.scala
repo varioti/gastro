@@ -5,8 +5,8 @@ object Main {
   def main(args: Array[String]): Unit =
     while (true) {
       GastroExtractor.extract("./products.csv") match {
-      case Success(products) => runCli(products)
-      case Failure(error) => {
+      case Right(products) => runCli(products)
+      case Left(error) => {
         println(f"AH ! Something wrong happened while extracting products from the file : $error")
         val input = scala.io.StdIn.readLine("Press anything to retry.")
         }
@@ -154,7 +154,7 @@ case class Product(id: Int, name: String, energy: Int, protein: Float,  sugar: F
 /* Extract the products from the file */
 object GastroExtractor {
 
-  def extract(path: String): Try[List[Product]] =
+  def extract(path: String): Either[Throwable, List[Product]] =
     Using(Source.fromFile(path)) { source =>
       (for {
         line <- source.getLines.drop(1) 
@@ -167,5 +167,5 @@ object GastroExtractor {
         cols(6).toFloat,    // total sugar (in g)
         cols(9).toFloat     // total fat (in g)
       )).toList
-    }
+    }.toEither
 }
