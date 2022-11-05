@@ -1,11 +1,16 @@
 import scala.io.Source
-import scala.util.{Random, Using}
+import scala.util.{Random, Using, Try, Success, Failure}
 
 object Main {
   def main(args: Array[String]): Unit =
-    GastroExtractor.extract("./products.csv") match {
-      case Left(error) => println(f"AH ! Something wrong happened: $error")
-      case Right(products) => runCli(products)
+    while (true) {
+      GastroExtractor.extract("./products.csv") match {
+      case Success(products) => runCli(products)
+      case Failure(error) => {
+        println(f"AH ! Something wrong happened while extracting products from the file : $error")
+        val input = scala.io.StdIn.readLine("Press anything to retry.")
+        }
+      }
     }
 
   private def runCli(products: List[Product]): Unit = {
@@ -30,11 +35,19 @@ object Main {
 trait Menu {
   def menu: List[Product]
 
+<<<<<<< HEAD
   def show = {
     println(this) // print menu name (specific of the case class used)
     (0 until menu.length).foreach(i => println(f"--- $i --- " + menu(i) + "[" + menu(i).energy.toString + " kcal]"))
     val total_energy = (menu.map(_.energy).foldLeft(0.0)(_ + _)).toFloat
     println("----- Total energy: " + total_energy + " kcal")
+=======
+  def show(){
+    println(this) // Print menu type
+    (0 until menu.length).foreach(i => println(f"--- $i --- " + menu(i) + "[" + menu(i).energy.toString + " kcal]")) // Print each ingredient
+    val total_energy = (menu.map(_.energy).foldLeft(0.0)(_ + _)).toFloat // Compute the total energy amount of the menu
+    println("----- Total energy: " + total_energy + " kcal") // Print the total energy amount of the menu
+>>>>>>> 3dda9797e19ebc4e007e6c12f7a274bd67fa74b9
   }
 }
 
@@ -60,7 +73,7 @@ case class SimpleBalancedMenu(menu:List[Product]) extends Menu {
    adds the ingredients in a Menu class and then prints it*/
 case class MenuComposer(products: List[Product], choice: Any) {
 
-  // ANONYMOUS FUNCTIONS
+  // ANONYMOUS FUNCTION
   /* Compares a value to a refvalue with an approximation factor
      True if refvalue - approximation <= value <= refvalue + approximation 
      False otherwise */
@@ -75,9 +88,15 @@ case class MenuComposer(products: List[Product], choice: Any) {
     }
   }
 
+<<<<<<< HEAD
   /* Returns a list of <howMany> balanced products 
      Balanced product has this ratio (25% proteins - 40% glucides - 35% lipids)
      with an approx factor of 5% */
+=======
+  /* Return a list of <howMany> balanced products 
+      - Balaned product has this ratio (25% proteins - 40% glucides - 35% lipids)
+        with an approx factor of 5% */
+>>>>>>> 3dda9797e19ebc4e007e6c12f7a274bd67fa74b9
   private def getBalancedProducts(howMany: Int): List[Product] = {
     val approx = 0.05
     products.length match {
@@ -85,24 +104,27 @@ case class MenuComposer(products: List[Product], choice: Any) {
         // COMPREHENSION LIST
         val bal_products = for {
           product <- products
-          totalNutr = product.protein + product.sugar + product.fat // Computes the total of nutriments to compute after the ratio 
-          // Keeps products where each nutriment respect approximatively the percents values
+          totalNutr = product.protein + product.sugar + product.fat // Computes the total amouny of nutriments to compute after the ratio 
+          // Check that ratio computed is <approx> approximatively good
           if (isApproximate(product.protein/totalNutr,0.25.toFloat,approx.toFloat) && 
             isApproximate(product.sugar/totalNutr,0.4.toFloat,approx.toFloat) && 
             isApproximate(product.fat/totalNutr,0.35.toFloat,approx.toFloat)) 
         } yield product
-        // Chooses <howMany> random balanced products in this list
+        // Choose <howMany> random balanced products in this list
         for { _ <- List.range(0, howMany) } yield bal_products(Random.between(0, bal_products.length))
       case _ => Nil
     }
   }
 
+<<<<<<< HEAD
   /* Returns a list of <howMany> products where the amount of protein is more than <min_protein> */
+=======
+  /* Return list of products where the amount of protein is more than <min_protein> */
+>>>>>>> 3dda9797e19ebc4e007e6c12f7a274bd67fa74b9
   private def getProteinProduct(howMany: Int, min_protein: Float): List[Product] = {
     products.length match {
       case n if n > 0 =>
         // FILTER FUNCTION
-        // Keeps products where the amount of protein is more than <min_protein>
         val protein = products.filter(p=>(p.protein > min_protein))
         // Chooses <howMany> random proteined products in this list
         for { _ <- List.range(0, howMany) } yield protein(Random.between(0, protein.length))
@@ -110,12 +132,17 @@ case class MenuComposer(products: List[Product], choice: Any) {
     }
   }
 
+<<<<<<< HEAD
   /* Returns a list of <howMany> products where the amount of sugar and fat is less than <max_sugar> and <max_fat> */
+=======
+  /* Return list of products where the amount of :
+     - sugar is less than <max_sugar> and
+     - fat is less than  <max_fat> */
+>>>>>>> 3dda9797e19ebc4e007e6c12f7a274bd67fa74b9
   private def getHealthyProducts(howMany: Int, max_sugar: Float, max_fat:Float ): List[Product] = {
     products.length match {
       case n if n > 0 =>
         // FILTER FUNCTION
-        // Keeps products where the amount of sugar and fat is less than <max_sugar> and <max_fat> 
         val healthy = products.filter(p=>(p.sugar < max_sugar && p.fat < max_fat))
         // Chooses <howMany> random healthy products in this list
         for { _ <- List.range(0, howMany) } yield products(Random.between(0, healthy.length))
@@ -123,36 +150,40 @@ case class MenuComposer(products: List[Product], choice: Any) {
     }
   }
   
-  /* Generates the correct type of menu depending of the choice of the user */
+  /* Generate the correct type of menu depending of the choice of the user */
   private def getMenu(choice: Any): Menu = {
     // PATTERN MATCHING
     choice match {
       case "1" => HealthyMenu(getHealthyProducts(3,5,8),3,5,8)
+<<<<<<< HEAD
       case "2" => ProteinMenu((getProteinProduct(1,20) ++ getRandomProducts(2)),2,20) //Protein menu composed of 1 proteined product and 2 random products
+=======
+      case "2" => ProteinMenu((getProteinProduct(1,25) ++ getBalancedProducts(2)),2,25) //Protein menu composed of 1 proteined product and 2 balanced products
+>>>>>>> 3dda9797e19ebc4e007e6c12f7a274bd67fa74b9
       case "3" => SimpleBalancedMenu(getBalancedProducts(1))
       case _ => RandomMenu(getRandomProducts(3),3) // Default (in case user enter other thing than 1,2,3 or 4)
     }
   }
 
-  /* Generates the menu and shows it */
+  /* Generate the menu and show it */
   def compose: Unit = {
     val menu = getMenu(choice)
     menu.show
   }
 }
 
-/* Represents a product with needed parameters for the composer */
+/* Represent a product with needed parameters for the composer */
 case class Product(id: Int, name: String, energy: Int, protein: Float,  sugar: Float, fat: Float) {
   override def toString: String = f"$name [${id.toString}]"
 }
 
-/* Extracts the products from the file */
+/* Extract the products from the file */
 object GastroExtractor {
 
-  def extract(path: String): Either[Throwable, List[Product]] =
+  def extract(path: String): Try[List[Product]] =
     Using(Source.fromFile(path)) { source =>
       (for {
-        line <- source.getLines.drop(1)
+        line <- source.getLines.drop(1) 
         cols = line.split(";")
       } yield Product(
         cols(0).toInt,      // id
@@ -162,5 +193,5 @@ object GastroExtractor {
         cols(6).toFloat,    // total sugar (in g)
         cols(9).toFloat     // total fat (in g)
       )).toList
-    }.toEither
+    }
 }
