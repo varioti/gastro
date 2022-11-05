@@ -9,7 +9,7 @@ object Main {
     }
 
   private def runCli(products: List[Product]): Unit = {
-    // Print all menu available 
+    // Print all menus available 
     println("Choices:") 
     println(" [1]: Menu composed by 3 healthy ingredients")
     println(" [2]: Menu composed by 1 proteined ingredient and 2 others ingredients")
@@ -30,8 +30,8 @@ object Main {
 trait Menu {
   def menu: List[Product]
 
-  def show(){
-    println(this)
+  def show = {
+    println(this) // print menu name (specific of the case class used)
     (0 until menu.length).foreach(i => println(f"--- $i --- " + menu(i) + "[" + menu(i).energy.toString + " kcal]"))
     val total_energy = (menu.map(_.energy).foldLeft(0.0)(_ + _)).toFloat
     println("----- Total energy: " + total_energy + " kcal")
@@ -57,7 +57,7 @@ case class SimpleBalancedMenu(menu:List[Product]) extends Menu {
 }
 
 /* Class which composes the menu depending on the user choice, 
-   adds the ingrdients in a Menu class and then prints it*/
+   adds the ingredients in a Menu class and then prints it*/
 case class MenuComposer(products: List[Product], choice: Any) {
 
   // ANONYMOUS FUNCTIONS
@@ -76,7 +76,7 @@ case class MenuComposer(products: List[Product], choice: Any) {
   }
 
   /* Returns a list of <howMany> balanced products 
-     Balaned product has this ratio (25% proteins - 40% glucides - 35% lipids)
+     Balanced product has this ratio (25% proteins - 40% glucides - 35% lipids)
      with an approx factor of 5% */
   private def getBalancedProducts(howMany: Int): List[Product] = {
     val approx = 0.05
@@ -97,6 +97,7 @@ case class MenuComposer(products: List[Product], choice: Any) {
     }
   }
 
+  /* Returns a list of <howMany> products where the amount of protein is more than <min_protein> */
   private def getProteinProduct(howMany: Int, min_protein: Float): List[Product] = {
     products.length match {
       case n if n > 0 =>
@@ -109,6 +110,7 @@ case class MenuComposer(products: List[Product], choice: Any) {
     }
   }
 
+  /* Returns a list of <howMany> products where the amount of sugar and fat is less than <max_sugar> and <max_fat> */
   private def getHealthyProducts(howMany: Int, max_sugar: Float, max_fat:Float ): List[Product] = {
     products.length match {
       case n if n > 0 =>
@@ -127,7 +129,7 @@ case class MenuComposer(products: List[Product], choice: Any) {
     choice match {
       case "1" => HealthyMenu(getHealthyProducts(3,5,8),3,5,8)
       case "2" => ProteinMenu((getProteinProduct(1,20) ++ getRandomProducts(2)),2,20) //Protein menu composed of 1 proteined product and 2 random products
-      case "3" => SimpleBalancedMenu(getBalancedProducts(3))
+      case "3" => SimpleBalancedMenu(getBalancedProducts(1))
       case _ => RandomMenu(getRandomProducts(3),3) // Default (in case user enter other thing than 1,2,3 or 4)
     }
   }
@@ -156,7 +158,7 @@ object GastroExtractor {
         cols(0).toInt,      // id
         cols(1),            // name
         cols(4).toInt,      // energy (in kcal)
-        cols(5).toFloat,    // toal protein (in g)
+        cols(5).toFloat,    // total protein (in g)
         cols(6).toFloat,    // total sugar (in g)
         cols(9).toFloat     // total fat (in g)
       )).toList
