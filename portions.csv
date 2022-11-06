@@ -1,0 +1,1153 @@
+Food code;Main food description;Subcode;Subcode description;WWEIA Category number;WWEIA Category description;Seq num;Portion description;Portion weight (g)
+11000000;Milk, human;;;9602;Human milk;1;1 cup;246
+11000000;Milk, human;;;9602;Human milk;2;Quantity not specified;0
+11000000;Milk, human;;;9602;Human milk;3;1 fl oz;30,8
+11100000;Milk, NFS;;;1004;Milk, reduced fat;1;1 cup;244
+11100000;Milk, NFS;;;1004;Milk, reduced fat;2;1 fl oz;30,5
+11100000;Milk, NFS;;;1004;Milk, reduced fat;3;1 individual school container;244
+11100000;Milk, NFS;;;1004;Milk, reduced fat;4;Guideline amount per fl oz of beverage;2,5
+11100000;Milk, NFS;;;1004;Milk, reduced fat;5;Guideline amount per cup of hot cereal;61
+11100000;Milk, NFS;;;1004;Milk, reduced fat;6;Quantity not specified;244
+11111000;Milk, whole;;;1002;Milk, whole;1;1 cup;244
+11111000;Milk, whole;;;1002;Milk, whole;2;1 fl oz;30,5
+11111000;Milk, whole;;;1002;Milk, whole;3;1 individual school container;244
+11111000;Milk, whole;;;1002;Milk, whole;4;Guideline amount per fl oz of beverage;2,5
+11111000;Milk, whole;;;1002;Milk, whole;5;Guideline amount per cup of hot cereal;61
+11111000;Milk, whole;;;1002;Milk, whole;6;Quantity not specified;244
+11111100;Milk, low sodium, whole;;;1002;Milk, whole;1;1 cup;244
+11111100;Milk, low sodium, whole;;;1002;Milk, whole;2;1 fl oz;30,5
+11111100;Milk, low sodium, whole;;;1002;Milk, whole;3;Guideline amount per fl oz of beverage;2,5
+11111100;Milk, low sodium, whole;;;1002;Milk, whole;4;Guideline amount per cup of hot cereal;61
+11111100;Milk, low sodium, whole;;;1002;Milk, whole;5;Quantity not specified;244
+11111150;Milk, calcium fortified, whole;;;1002;Milk, whole;1;1 cup;244
+11111150;Milk, calcium fortified, whole;;;1002;Milk, whole;2;1 fl oz;30,5
+11111150;Milk, calcium fortified, whole;;;1002;Milk, whole;3;Guideline amount per fl oz of beverage;2,5
+11111150;Milk, calcium fortified, whole;;;1002;Milk, whole;4;Guideline amount per cup of hot cereal;61
+11111150;Milk, calcium fortified, whole;;;1002;Milk, whole;5;Quantity not specified;244
+11111160;Milk, calcium fortified, low fat (1%);;;1006;Milk, lowfat;1;1 cup;244
+11111160;Milk, calcium fortified, low fat (1%);;;1006;Milk, lowfat;2;1 fl oz;30,5
+11111160;Milk, calcium fortified, low fat (1%);;;1006;Milk, lowfat;3;Guideline amount per fl oz of beverage;2,5
+11111160;Milk, calcium fortified, low fat (1%);;;1006;Milk, lowfat;4;Guideline amount per cup of hot cereal;61
+11111160;Milk, calcium fortified, low fat (1%);;;1006;Milk, lowfat;5;Quantity not specified;244
+11111170;Milk, calcium fortified, fat free (skim);;;1008;Milk, nonfat;1;1 cup;244
+11111170;Milk, calcium fortified, fat free (skim);;;1008;Milk, nonfat;2;1 fl oz;30,5
+11111170;Milk, calcium fortified, fat free (skim);;;1008;Milk, nonfat;3;Guideline amount per fl oz of beverage;2,5
+11111170;Milk, calcium fortified, fat free (skim);;;1008;Milk, nonfat;4;Guideline amount per cup of hot cereal;61
+11111170;Milk, calcium fortified, fat free (skim);;;1008;Milk, nonfat;5;Quantity not specified;244
+11112110;Milk, reduced fat (2%);;;1004;Milk, reduced fat;1;1 cup;244
+11112110;Milk, reduced fat (2%);;;1004;Milk, reduced fat;2;1 fl oz;30,5
+11112110;Milk, reduced fat (2%);;;1004;Milk, reduced fat;3;1 individual school container;244
+11112110;Milk, reduced fat (2%);;;1004;Milk, reduced fat;4;Guideline amount per fl oz of beverage;2,5
+11112110;Milk, reduced fat (2%);;;1004;Milk, reduced fat;5;Guideline amount per cup of hot cereal;61
+11112110;Milk, reduced fat (2%);;;1004;Milk, reduced fat;6;Quantity not specified;244
+11112120;Milk, acidophilus, low fat (1%);;;1006;Milk, lowfat;1;1 cup;244
+11112120;Milk, acidophilus, low fat (1%);;;1006;Milk, lowfat;2;1 fl oz;30,5
+11112120;Milk, acidophilus, low fat (1%);;;1006;Milk, lowfat;3;Guideline amount per fl oz of beverage;2,5
+11112120;Milk, acidophilus, low fat (1%);;;1006;Milk, lowfat;4;Guideline amount per cup of hot cereal;61
+11112120;Milk, acidophilus, low fat (1%);;;1006;Milk, lowfat;5;Quantity not specified;244
+11112130;Milk, acidophilus, reduced fat (2%);;;1004;Milk, reduced fat;1;1 cup;244
+11112130;Milk, acidophilus, reduced fat (2%);;;1004;Milk, reduced fat;2;1 fl oz;30,5
+11112130;Milk, acidophilus, reduced fat (2%);;;1004;Milk, reduced fat;3;Quantity not specified;244
+11112130;Milk, acidophilus, reduced fat (2%);;;1004;Milk, reduced fat;4;Guideline amount per fl oz of beverage;2,5
+11112130;Milk, acidophilus, reduced fat (2%);;;1004;Milk, reduced fat;5;Guideline amount per cup of hot cereal;61
+11112210;Milk, low fat (1%);;;1006;Milk, lowfat;1;1 cup;244
+11112210;Milk, low fat (1%);;;1006;Milk, lowfat;2;1 fl oz;30,5
+11112210;Milk, low fat (1%);;;1006;Milk, lowfat;3;1 individual school container;244
+11112210;Milk, low fat (1%);;;1006;Milk, lowfat;4;Guideline amount per fl oz of beverage;2,5
+11112210;Milk, low fat (1%);;;1006;Milk, lowfat;5;Guideline amount per cup of hot cereal;61
+11112210;Milk, low fat (1%);;;1006;Milk, lowfat;6;Quantity not specified;244
+11113000;Milk, fat free (skim);;;1008;Milk, nonfat;1;1 cup;244
+11113000;Milk, fat free (skim);;;1008;Milk, nonfat;2;1 fl oz;30,5
+11113000;Milk, fat free (skim);;;1008;Milk, nonfat;3;1 individual school container;244
+11113000;Milk, fat free (skim);;;1008;Milk, nonfat;4;Guideline amount per fl oz of beverage;2,5
+11113000;Milk, fat free (skim);;;1008;Milk, nonfat;5;Guideline amount per cup of hot cereal;61
+11113000;Milk, fat free (skim);;;1008;Milk, nonfat;6;Quantity not specified;244
+11114300;Milk, lactose free, low fat (1%);;;1006;Milk, lowfat;1;1 cup;244
+11114300;Milk, lactose free, low fat (1%);;;1006;Milk, lowfat;2;1 fl oz;30,5
+11114300;Milk, lactose free, low fat (1%);;;1006;Milk, lowfat;3;Guideline amount per fl oz of beverage;2,5
+11114300;Milk, lactose free, low fat (1%);;;1006;Milk, lowfat;4;Guideline amount per cup of hot cereal;61
+11114300;Milk, lactose free, low fat (1%);;;1006;Milk, lowfat;5;Quantity not specified;244
+11114320;Milk, lactose free, fat free (skim);;;1008;Milk, nonfat;1;1 cup;244
+11114320;Milk, lactose free, fat free (skim);;;1008;Milk, nonfat;2;1 fl oz;30,5
+11114320;Milk, lactose free, fat free (skim);;;1008;Milk, nonfat;3;Guideline amount per fl oz of beverage;2,5
+11114320;Milk, lactose free, fat free (skim);;;1008;Milk, nonfat;4;Guideline amount per cup of hot cereal;61
+11114320;Milk, lactose free, fat free (skim);;;1008;Milk, nonfat;5;Quantity not specified;244
+11114330;Milk, lactose free, reduced fat (2%);;;1004;Milk, reduced fat;1;1 cup;244
+11114330;Milk, lactose free, reduced fat (2%);;;1004;Milk, reduced fat;2;1 fl oz;30,5
+11114330;Milk, lactose free, reduced fat (2%);;;1004;Milk, reduced fat;3;Guideline amount per fl oz of beverage;2,5
+11114330;Milk, lactose free, reduced fat (2%);;;1004;Milk, reduced fat;4;Guideline amount per cup of hot cereal;61
+11114330;Milk, lactose free, reduced fat (2%);;;1004;Milk, reduced fat;5;Quantity not specified;244
+11114350;Milk, lactose free, whole;;;1002;Milk, whole;1;1 cup;244
+11114350;Milk, lactose free, whole;;;1002;Milk, whole;2;1 fl oz;30,5
+11114350;Milk, lactose free, whole;;;1002;Milk, whole;3;Guideline amount per fl oz of beverage;2,5
+11114350;Milk, lactose free, whole;;;1002;Milk, whole;4;Guideline amount per cup of hot cereal;61
+11114350;Milk, lactose free, whole;;;1002;Milk, whole;5;Quantity not specified;244
+11115000;Buttermilk, fat free (skim);;;1008;Milk, nonfat;1;1 cup;244
+11115000;Buttermilk, fat free (skim);;;1008;Milk, nonfat;2;1 fl oz;30,5
+11115000;Buttermilk, fat free (skim);;;1008;Milk, nonfat;3;Guideline amount per fl oz of beverage;2,6
+11115000;Buttermilk, fat free (skim);;;1008;Milk, nonfat;4;Guideline amount per cup of hot cereal;61
+11115000;Buttermilk, fat free (skim);;;1008;Milk, nonfat;5;Quantity not specified;244
+11115100;Buttermilk, low fat (1%);;;1006;Milk, lowfat;1;1 cup;244
+11115100;Buttermilk, low fat (1%);;;1006;Milk, lowfat;2;1 fl oz;30,5
+11115100;Buttermilk, low fat (1%);;;1006;Milk, lowfat;3;Guideline amount per fl oz of beverage;2,6
+11115100;Buttermilk, low fat (1%);;;1006;Milk, lowfat;4;Guideline amount per cup of hot cereal;61
+11115100;Buttermilk, low fat (1%);;;1006;Milk, lowfat;5;Quantity not specified;244
+11115200;Buttermilk, reduced fat (2%);;;1004;Milk, reduced fat;1;1 cup;244
+11115200;Buttermilk, reduced fat (2%);;;1004;Milk, reduced fat;2;1 fl oz;30,5
+11115200;Buttermilk, reduced fat (2%);;;1004;Milk, reduced fat;3;Guideline amount per fl oz of beverage;2,6
+11115200;Buttermilk, reduced fat (2%);;;1004;Milk, reduced fat;4;Guideline amount per cup of hot cereal;61
+11115200;Buttermilk, reduced fat (2%);;;1004;Milk, reduced fat;5;Quantity not specified;244
+11115300;Buttermilk, whole;;;1002;Milk, whole;1;1 cup;244
+11115300;Buttermilk, whole;;;1002;Milk, whole;2;1 fl oz;30,5
+11115300;Buttermilk, whole;;;1002;Milk, whole;3;Guideline amount per fl oz of beverage;2,6
+11115300;Buttermilk, whole;;;1002;Milk, whole;4;Guideline amount per cup of hot cereal;61
+11115300;Buttermilk, whole;;;1002;Milk, whole;5;Quantity not specified;244
+11115400;Kefir, NS as to fat content;;;1006;Milk, lowfat;1;1 cup;244
+11115400;Kefir, NS as to fat content;;;1006;Milk, lowfat;2;1 fl oz;30,5
+11115400;Kefir, NS as to fat content;;;1006;Milk, lowfat;3;Quantity not specified;244
+11116000;Goat's milk, whole;;;1002;Milk, whole;1;1 cup;244
+11116000;Goat's milk, whole;;;1002;Milk, whole;2;1 fl oz;30,5
+11116000;Goat's milk, whole;;;1002;Milk, whole;3;Guideline amount per fl oz of beverage;2,5
+11116000;Goat's milk, whole;;;1002;Milk, whole;4;Guideline amount per cup of hot cereal;61
+11116000;Goat's milk, whole;;;1002;Milk, whole;5;Quantity not specified;244
+11120000;Milk, dry, reconstituted, NS as to fat content;;;1008;Milk, nonfat;1;1 cup;244
+11120000;Milk, dry, reconstituted, NS as to fat content;;;1008;Milk, nonfat;2;1 fl oz;30,5
+11120000;Milk, dry, reconstituted, NS as to fat content;;;1008;Milk, nonfat;3;Guideline amount per fl oz of beverage;2,5
+11120000;Milk, dry, reconstituted, NS as to fat content;;;1008;Milk, nonfat;4;Guideline amount per cup of hot cereal;61
+11120000;Milk, dry, reconstituted, NS as to fat content;;;1008;Milk, nonfat;5;Quantity not specified;244
+11121100;Milk, dry, reconstituted, whole;;;1002;Milk, whole;1;1 cup;244
+11121100;Milk, dry, reconstituted, whole;;;1002;Milk, whole;2;1 fl oz;30,5
+11121100;Milk, dry, reconstituted, whole;;;1002;Milk, whole;3;Guideline amount per fl oz of beverage;2,5
+11121100;Milk, dry, reconstituted, whole;;;1002;Milk, whole;4;Guideline amount per cup of hot cereal;61
+11121100;Milk, dry, reconstituted, whole;;;1002;Milk, whole;5;Quantity not specified;244
+11121210;Milk, dry, reconstituted, low fat (1%);;;1006;Milk, lowfat;1;1 cup;244
+11121210;Milk, dry, reconstituted, low fat (1%);;;1006;Milk, lowfat;2;1 fl oz;30,5
+11121210;Milk, dry, reconstituted, low fat (1%);;;1006;Milk, lowfat;3;Guideline amount per fl oz of beverage;2,5
+11121210;Milk, dry, reconstituted, low fat (1%);;;1006;Milk, lowfat;4;Guideline amount per cup of hot cereal;61
+11121210;Milk, dry, reconstituted, low fat (1%);;;1006;Milk, lowfat;5;Quantity not specified;244
+11121300;Milk, dry, reconstituted, fat free (skim);;;1008;Milk, nonfat;1;1 cup;244
+11121300;Milk, dry, reconstituted, fat free (skim);;;1008;Milk, nonfat;2;1 fl oz;30,5
+11121300;Milk, dry, reconstituted, fat free (skim);;;1008;Milk, nonfat;3;Guideline amount per fl oz of beverage;2,5
+11121300;Milk, dry, reconstituted, fat free (skim);;;1008;Milk, nonfat;4;Guideline amount per cup of hot cereal;61
+11121300;Milk, dry, reconstituted, fat free (skim);;;1008;Milk, nonfat;5;Quantity not specified;244
+11210050;Milk, evaporated, NS as to fat content;;;1002;Milk, whole;1;1 cup;252
+11210050;Milk, evaporated, NS as to fat content;;;1002;Milk, whole;2;1 fl oz;31,5
+11210050;Milk, evaporated, NS as to fat content;;;1002;Milk, whole;3;Quantity not specified;16
+11210050;Milk, evaporated, NS as to fat content;;;1002;Milk, whole;4;Guideline amount per fl oz of beverage;2,6
+11210050;Milk, evaporated, NS as to fat content;;;1002;Milk, whole;5;Quantity not specified, as a drink or on cereal;126
+11210050;Milk, evaporated, NS as to fat content;;;1002;Milk, whole;6;Quantity not specified, if in beverage;16
+11211050;Milk, evaporated, whole;;;1002;Milk, whole;1;1 cup;252
+11211050;Milk, evaporated, whole;;;1002;Milk, whole;2;1 fl oz;31,5
+11211050;Milk, evaporated, whole;;;1002;Milk, whole;3;Quantity not specified;16
+11211050;Milk, evaporated, whole;;;1002;Milk, whole;4;Guideline amount per fl oz of beverage;2,6
+11211050;Milk, evaporated, whole;;;1002;Milk, whole;5;Quantity not specified, as a drink or on cereal;126
+11211050;Milk, evaporated, whole;;;1002;Milk, whole;6;Quantity not specified, if in beverage;16
+11211400;Milk, evaporated, reduced fat (2%);;;1004;Milk, reduced fat;1;1 cup;252
+11211400;Milk, evaporated, reduced fat (2%);;;1004;Milk, reduced fat;2;1 fl oz;31,5
+11211400;Milk, evaporated, reduced fat (2%);;;1004;Milk, reduced fat;6;Quantity not specified, if in beverage;16
+11211400;Milk, evaporated, reduced fat (2%);;;1004;Milk, reduced fat;7;Quantity not specified, as a drink or on cereal;126
+11211400;Milk, evaporated, reduced fat (2%);;;1004;Milk, reduced fat;8;Quantity not specified;16
+11212050;Milk, evaporated, fat free (skim);;;1008;Milk, nonfat;1;1 cup;252
+11212050;Milk, evaporated, fat free (skim);;;1008;Milk, nonfat;2;1 fl oz;31,5
+11212050;Milk, evaporated, fat free (skim);;;1008;Milk, nonfat;3;Quantity not specified;16
+11212050;Milk, evaporated, fat free (skim);;;1008;Milk, nonfat;4;Guideline amount per fl oz of beverage;2,6
+11212050;Milk, evaporated, fat free (skim);;;1008;Milk, nonfat;5;Quantity not specified, as a drink or on cereal;126
+11212050;Milk, evaporated, fat free (skim);;;1008;Milk, nonfat;6;Quantity not specified, if in beverage;16
+11220000;Milk, condensed, sweetened;;;1202;Flavored milk, whole;1;1 cup;304
+11220000;Milk, condensed, sweetened;;;1202;Flavored milk, whole;2;1 fl oz;38
+11220000;Milk, condensed, sweetened;;;1202;Flavored milk, whole;3;Quantity not specified;19
+11300100;Non-dairy milk, NFS;;;1404;Milk substitutes;1;1 cup;244
+11300100;Non-dairy milk, NFS;;;1404;Milk substitutes;2;1 fl oz;30,5
+11300100;Non-dairy milk, NFS;;;1404;Milk substitutes;3;Guideline amount per fl oz of beverage;2,5
+11300100;Non-dairy milk, NFS;;;1404;Milk substitutes;4;Guideline amount per cup of hot cereal;61
+11300100;Non-dairy milk, NFS;;;1404;Milk substitutes;5;Quantity not specified;244
+11320000;Soy milk;;;1404;Milk substitutes;1;1 cup;244
+11320000;Soy milk;;;1404;Milk substitutes;2;1 fl oz;30,5
+11320000;Soy milk;;;1404;Milk substitutes;3;Guideline amount per fl oz of beverage;2,5
+11320000;Soy milk;;;1404;Milk substitutes;4;Guideline amount per cup of hot cereal;61
+11320000;Soy milk;;;1404;Milk substitutes;5;Quantity not specified;244
+11320100;Soy milk, light;;;1404;Milk substitutes;1;1 cup;244
+11320100;Soy milk, light;;;1404;Milk substitutes;2;1 fl oz;30,5
+11320100;Soy milk, light;;;1404;Milk substitutes;3;Quantity not specified;244
+11320200;Soy milk, nonfat;;;1404;Milk substitutes;1;1 cup;244
+11320200;Soy milk, nonfat;;;1404;Milk substitutes;2;1 fl oz;30,5
+11320200;Soy milk, nonfat;;;1404;Milk substitutes;3;Quantity not specified;244
+11321000;Soy milk, chocolate;;;1404;Milk substitutes;1;1 cup;244
+11321000;Soy milk, chocolate;;;1404;Milk substitutes;2;1 fl oz;30,5
+11321000;Soy milk, chocolate;;;1404;Milk substitutes;3;Quantity not specified;244
+11321100;Soy milk, light, chocolate;;;1404;Milk substitutes;1;1 cup;244
+11321100;Soy milk, light, chocolate;;;1404;Milk substitutes;2;1 fl oz;30,5
+11321100;Soy milk, light, chocolate;;;1404;Milk substitutes;3;Quantity not specified;244
+11321200;Soy milk, nonfat, chocolate;;;1404;Milk substitutes;1;1 cup;244
+11321200;Soy milk, nonfat, chocolate;;;1404;Milk substitutes;2;1 fl oz;30,5
+11321200;Soy milk, nonfat, chocolate;;;1404;Milk substitutes;3;Quantity not specified;244
+11350000;Almond milk, sweetened;;;1404;Milk substitutes;1;1 cup;244
+11350000;Almond milk, sweetened;;;1404;Milk substitutes;2;1 fl oz;30,5
+11350000;Almond milk, sweetened;;;1404;Milk substitutes;3;Guideline amount per fl oz of beverage;2,5
+11350000;Almond milk, sweetened;;;1404;Milk substitutes;4;Guideline amount per cup of hot cereal;61
+11350000;Almond milk, sweetened;;;1404;Milk substitutes;5;Quantity not specified;244
+11350010;Almond milk, sweetened, chocolate;;;1404;Milk substitutes;1;1 cup;244
+11350010;Almond milk, sweetened, chocolate;;;1404;Milk substitutes;2;1 fl oz;30,5
+11350010;Almond milk, sweetened, chocolate;;;1404;Milk substitutes;3;Guideline amount per fl oz of beverage;2,5
+11350010;Almond milk, sweetened, chocolate;;;1404;Milk substitutes;4;Guideline amount per cup of hot cereal;61
+11350010;Almond milk, sweetened, chocolate;;;1404;Milk substitutes;5;Quantity not specified;244
+11350020;Almond milk, unsweetened;;;1404;Milk substitutes;1;1 cup;244
+11350020;Almond milk, unsweetened;;;1404;Milk substitutes;2;1 fl oz;30,5
+11350020;Almond milk, unsweetened;;;1404;Milk substitutes;3;Guideline amount per fl oz of beverage;2,5
+11350020;Almond milk, unsweetened;;;1404;Milk substitutes;4;Guideline amount per cup of hot cereal;61
+11350020;Almond milk, unsweetened;;;1404;Milk substitutes;5;Quantity not specified;244
+11350030;Almond milk, unsweetened, chocolate;;;1404;Milk substitutes;1;1 cup;244
+11350030;Almond milk, unsweetened, chocolate;;;1404;Milk substitutes;2;1 fl oz;30,5
+11350030;Almond milk, unsweetened, chocolate;;;1404;Milk substitutes;3;Guideline amount per fl oz of beverage;2,5
+11350030;Almond milk, unsweetened, chocolate;;;1404;Milk substitutes;4;Guideline amount per cup of hot cereal;61
+11350030;Almond milk, unsweetened, chocolate;;;1404;Milk substitutes;5;Quantity not specified;244
+11360000;Rice milk;;;1404;Milk substitutes;1;1 cup;244
+11360000;Rice milk;;;1404;Milk substitutes;2;1 fl oz;30,5
+11360000;Rice milk;;;1404;Milk substitutes;3;Guideline amount per fl oz of beverage;2,5
+11360000;Rice milk;;;1404;Milk substitutes;4;Guideline amount per cup of hot cereal;61
+11360000;Rice milk;;;1404;Milk substitutes;5;Quantity not specified;244
+11370000;Coconut milk;;;1404;Milk substitutes;1;1 cup;244
+11370000;Coconut milk;;;1404;Milk substitutes;2;1 fl oz;30,5
+11370000;Coconut milk;;;1404;Milk substitutes;3;Guideline amount per fl oz of beverage;2,5
+11370000;Coconut milk;;;1404;Milk substitutes;4;Guideline amount per cup of hot cereal;61
+11370000;Coconut milk;;;1404;Milk substitutes;5;Quantity not specified;244
+11400000;Yogurt, NFS;;;1820;Yogurt, regular;1;1 4 oz container;113
+11400000;Yogurt, NFS;;;1820;Yogurt, regular;2;1 6 oz container;170
+11400000;Yogurt, NFS;;;1820;Yogurt, regular;3;1 container, NFS;170
+11400000;Yogurt, NFS;;;1820;Yogurt, regular;4;1 cup;245
+11400000;Yogurt, NFS;;;1820;Yogurt, regular;5;Quantity not specified;170
+11400010;Yogurt, Greek, NS as to type of milk or flavor;;;1822;Yogurt, Greek;1;1 5.3 oz container;150
+11400010;Yogurt, Greek, NS as to type of milk or flavor;;;1822;Yogurt, Greek;2;1 6 oz container;170
+11400010;Yogurt, Greek, NS as to type of milk or flavor;;;1822;Yogurt, Greek;3;1 container, NFS;150
+11400010;Yogurt, Greek, NS as to type of milk or flavor;;;1822;Yogurt, Greek;4;1 cup;245
+11400010;Yogurt, Greek, NS as to type of milk or flavor;;;1822;Yogurt, Greek;5;Quantity not specified;150
+11410000;Yogurt, NS as to type of milk or flavor;;;1820;Yogurt, regular;1;1 4 oz container;113
+11410000;Yogurt, NS as to type of milk or flavor;;;1820;Yogurt, regular;2;1 6 oz container;170
+11410000;Yogurt, NS as to type of milk or flavor;;;1820;Yogurt, regular;3;1 container, NFS;170
+11410000;Yogurt, NS as to type of milk or flavor;;;1820;Yogurt, regular;4;1 cup;245
+11410000;Yogurt, NS as to type of milk or flavor;;;1820;Yogurt, regular;9;Quantity not specified;170
+11411010;Yogurt, NS as to type of milk, plain;;;1820;Yogurt, regular;1;1 4 oz container;113
+11411010;Yogurt, NS as to type of milk, plain;;;1820;Yogurt, regular;2;1 6 oz container;170
+11411010;Yogurt, NS as to type of milk, plain;;;1820;Yogurt, regular;3;1 container, NFS;170
+11411010;Yogurt, NS as to type of milk, plain;;;1820;Yogurt, regular;4;1 cup;245
+11411010;Yogurt, NS as to type of milk, plain;;;1820;Yogurt, regular;7;Quantity not specified;170
+11411100;Yogurt, whole milk, plain;;;1820;Yogurt, regular;1;1 4 oz container;113
+11411100;Yogurt, whole milk, plain;;;1820;Yogurt, regular;2;1 6 oz container;170
+11411100;Yogurt, whole milk, plain;;;1820;Yogurt, regular;3;1 container, NFS;170
+11411100;Yogurt, whole milk, plain;;;1820;Yogurt, regular;4;1 cup;245
+11411100;Yogurt, whole milk, plain;;;1820;Yogurt, regular;7;Quantity not specified;170
+11411200;Yogurt, low fat milk, plain;;;1820;Yogurt, regular;1;1 4 oz container;113
+11411200;Yogurt, low fat milk, plain;;;1820;Yogurt, regular;2;1 6 oz container;170
+11411200;Yogurt, low fat milk, plain;;;1820;Yogurt, regular;3;1 container, NFS;170
+11411200;Yogurt, low fat milk, plain;;;1820;Yogurt, regular;4;1 cup;245
+11411200;Yogurt, low fat milk, plain;;;1820;Yogurt, regular;7;Quantity not specified;170
+11411300;Yogurt, nonfat milk, plain;;;1820;Yogurt, regular;1;1 4 oz container;113
+11411300;Yogurt, nonfat milk, plain;;;1820;Yogurt, regular;2;1 6 oz container;170
+11411300;Yogurt, nonfat milk, plain;;;1820;Yogurt, regular;3;1 container, NFS;170
+11411300;Yogurt, nonfat milk, plain;;;1820;Yogurt, regular;4;1 cup;245
+11411300;Yogurt, nonfat milk, plain;;;1820;Yogurt, regular;7;Quantity not specified;170
+11411390;Yogurt, Greek, NS as to type of milk, plain;;;1822;Yogurt, Greek;1;1 5.3 oz container;150
+11411390;Yogurt, Greek, NS as to type of milk, plain;;;1822;Yogurt, Greek;2;1 6 oz container;170
+11411390;Yogurt, Greek, NS as to type of milk, plain;;;1822;Yogurt, Greek;3;1 container, NFS;150
+11411390;Yogurt, Greek, NS as to type of milk, plain;;;1822;Yogurt, Greek;4;1 cup;245
+11411390;Yogurt, Greek, NS as to type of milk, plain;;;1822;Yogurt, Greek;5;Quantity not specified;150
+11411400;Yogurt, Greek, whole milk, plain;;;1822;Yogurt, Greek;1;1 5.3 oz container;150
+11411400;Yogurt, Greek, whole milk, plain;;;1822;Yogurt, Greek;2;1 6 oz container;170
+11411400;Yogurt, Greek, whole milk, plain;;;1822;Yogurt, Greek;3;1 container, NFS;150
+11411400;Yogurt, Greek, whole milk, plain;;;1822;Yogurt, Greek;4;1 cup;245
+11411400;Yogurt, Greek, whole milk, plain;;;1822;Yogurt, Greek;6;Quantity not specified;150
+11411410;Yogurt, Greek, low fat milk, plain;;;1822;Yogurt, Greek;1;1 5.3 oz container;150
+11411410;Yogurt, Greek, low fat milk, plain;;;1822;Yogurt, Greek;2;1 6 oz container;170
+11411410;Yogurt, Greek, low fat milk, plain;;;1822;Yogurt, Greek;3;1 container, NFS;150
+11411410;Yogurt, Greek, low fat milk, plain;;;1822;Yogurt, Greek;4;1 cup;245
+11411410;Yogurt, Greek, low fat milk, plain;;;1822;Yogurt, Greek;6;Quantity not specified;150
+11411420;Yogurt, Greek, nonfat milk, plain;;;1822;Yogurt, Greek;1;1 5.3 oz container;150
+11411420;Yogurt, Greek, nonfat milk, plain;;;1822;Yogurt, Greek;2;1 6 oz container;170
+11411420;Yogurt, Greek, nonfat milk, plain;;;1822;Yogurt, Greek;3;1 container, NFS;150
+11411420;Yogurt, Greek, nonfat milk, plain;;;1822;Yogurt, Greek;4;1 cup;245
+11411420;Yogurt, Greek, nonfat milk, plain;;;1822;Yogurt, Greek;6;Quantity not specified;150
+11430000;Yogurt, NS as to type of milk, fruit;;;1820;Yogurt, regular;1;1 4 oz container;113
+11430000;Yogurt, NS as to type of milk, fruit;;;1820;Yogurt, regular;2;1 6 oz container;170
+11430000;Yogurt, NS as to type of milk, fruit;;;1820;Yogurt, regular;3;1 container, NFS;170
+11430000;Yogurt, NS as to type of milk, fruit;;;1820;Yogurt, regular;4;1 cup;245
+11430000;Yogurt, NS as to type of milk, fruit;;;1820;Yogurt, regular;10;Quantity not specified;170
+11431000;Yogurt, whole milk, fruit;;;1820;Yogurt, regular;1;1 4 oz container;113
+11431000;Yogurt, whole milk, fruit;;;1820;Yogurt, regular;2;1 6 oz container;170
+11431000;Yogurt, whole milk, fruit;;;1820;Yogurt, regular;3;1 container, NFS;170
+11431000;Yogurt, whole milk, fruit;;;1820;Yogurt, regular;4;1 cup;245
+11431000;Yogurt, whole milk, fruit;;;1820;Yogurt, regular;8;Quantity not specified;170
+11432000;Yogurt, low fat milk, fruit;;;1820;Yogurt, regular;1;1 tube;64
+11432000;Yogurt, low fat milk, fruit;;;1820;Yogurt, regular;2;1 4 oz container;113
+11432000;Yogurt, low fat milk, fruit;;;1820;Yogurt, regular;3;1 6 oz container;170
+11432000;Yogurt, low fat milk, fruit;;;1820;Yogurt, regular;4;1 container, NFS;170
+11432000;Yogurt, low fat milk, fruit;;;1820;Yogurt, regular;5;1 cup;245
+11432000;Yogurt, low fat milk, fruit;;;1820;Yogurt, regular;12;Quantity not specified;170
+11433000;Yogurt, nonfat milk, fruit;;;1820;Yogurt, regular;1;1 4 oz container;113
+11433000;Yogurt, nonfat milk, fruit;;;1820;Yogurt, regular;2;1 6 oz container;170
+11433000;Yogurt, nonfat milk, fruit;;;1820;Yogurt, regular;3;1 container, NFS;170
+11433000;Yogurt, nonfat milk, fruit;;;1820;Yogurt, regular;4;1 cup;245
+11433000;Yogurt, nonfat milk, fruit;;;1820;Yogurt, regular;8;Quantity not specified;170
+11433990;Yogurt, Greek, NS as to type of milk, fruit;;;1822;Yogurt, Greek;1;1 5.3 oz container;150
+11433990;Yogurt, Greek, NS as to type of milk, fruit;;;1822;Yogurt, Greek;2;1 6 oz container;170
+11433990;Yogurt, Greek, NS as to type of milk, fruit;;;1822;Yogurt, Greek;3;1 container, NFS;150
+11433990;Yogurt, Greek, NS as to type of milk, fruit;;;1822;Yogurt, Greek;4;1 cup;245
+11433990;Yogurt, Greek, NS as to type of milk, fruit;;;1822;Yogurt, Greek;5;Quantity not specified;150
+11434000;Yogurt, Greek, whole milk, fruit;;;1822;Yogurt, Greek;1;1 5.3 oz container;150
+11434000;Yogurt, Greek, whole milk, fruit;;;1822;Yogurt, Greek;2;1 6 oz container;170
+11434000;Yogurt, Greek, whole milk, fruit;;;1822;Yogurt, Greek;3;1 container, NFS;150
+11434000;Yogurt, Greek, whole milk, fruit;;;1822;Yogurt, Greek;4;1 cup;245
+11434000;Yogurt, Greek, whole milk, fruit;;;1822;Yogurt, Greek;6;Quantity not specified;150
+11434010;Yogurt, Greek, low fat milk, fruit;;;1822;Yogurt, Greek;1;1 tube;57
+11434010;Yogurt, Greek, low fat milk, fruit;;;1822;Yogurt, Greek;2;1 5.3 oz container;150
+11434010;Yogurt, Greek, low fat milk, fruit;;;1822;Yogurt, Greek;3;1 6 oz container;170
+11434010;Yogurt, Greek, low fat milk, fruit;;;1822;Yogurt, Greek;4;1 container, NFS;150
+11434010;Yogurt, Greek, low fat milk, fruit;;;1822;Yogurt, Greek;5;1 cup;245
+11434010;Yogurt, Greek, low fat milk, fruit;;;1822;Yogurt, Greek;7;Quantity not specified;150
+11434020;Yogurt, Greek, nonfat milk, fruit;;;1822;Yogurt, Greek;1;1 5.3 oz container;150
+11434020;Yogurt, Greek, nonfat milk, fruit;;;1822;Yogurt, Greek;2;1 6 oz container;170
+11434020;Yogurt, Greek, nonfat milk, fruit;;;1822;Yogurt, Greek;3;1 container, NFS;150
+11434020;Yogurt, Greek, nonfat milk, fruit;;;1822;Yogurt, Greek;4;1 cup;245
+11434020;Yogurt, Greek, nonfat milk, fruit;;;1822;Yogurt, Greek;6;Quantity not specified;150
+11434090;Yogurt, NS as to type of milk, flavors other than fruit;;;1820;Yogurt, regular;1;1 4 oz container;113
+11434090;Yogurt, NS as to type of milk, flavors other than fruit;;;1820;Yogurt, regular;2;1 6 oz container;170
+11434090;Yogurt, NS as to type of milk, flavors other than fruit;;;1820;Yogurt, regular;3;1 container, NFS;170
+11434090;Yogurt, NS as to type of milk, flavors other than fruit;;;1820;Yogurt, regular;4;1 cup;245
+11434090;Yogurt, NS as to type of milk, flavors other than fruit;;;1820;Yogurt, regular;5;Quantity not specified;170
+11434100;Yogurt, whole milk, flavors other than fruit;;;1820;Yogurt, regular;1;1 4 oz container;113
+11434100;Yogurt, whole milk, flavors other than fruit;;;1820;Yogurt, regular;2;1 6 oz container;170
+11434100;Yogurt, whole milk, flavors other than fruit;;;1820;Yogurt, regular;3;1 container, NFS;170
+11434100;Yogurt, whole milk, flavors other than fruit;;;1820;Yogurt, regular;4;1 cup;245
+11434100;Yogurt, whole milk, flavors other than fruit;;;1820;Yogurt, regular;5;Quantity not specified;170
+11434200;Yogurt, low fat milk, flavors other than fruit;;;1820;Yogurt, regular;1;1 tube;64
+11434200;Yogurt, low fat milk, flavors other than fruit;;;1820;Yogurt, regular;2;1 4 oz container;113
+11434200;Yogurt, low fat milk, flavors other than fruit;;;1820;Yogurt, regular;3;1 6 oz container;170
+11434200;Yogurt, low fat milk, flavors other than fruit;;;1820;Yogurt, regular;4;1 container, NFS;170
+11434200;Yogurt, low fat milk, flavors other than fruit;;;1820;Yogurt, regular;5;1 cup;245
+11434200;Yogurt, low fat milk, flavors other than fruit;;;1820;Yogurt, regular;6;Quantity not specified;170
+11434300;Yogurt, nonfat milk, flavors other than fruit;;;1820;Yogurt, regular;1;1 4 oz container;113
+11434300;Yogurt, nonfat milk, flavors other than fruit;;;1820;Yogurt, regular;2;1 6 oz container;170
+11434300;Yogurt, nonfat milk, flavors other than fruit;;;1820;Yogurt, regular;3;1 container, NFS;170
+11434300;Yogurt, nonfat milk, flavors other than fruit;;;1820;Yogurt, regular;4;1 cup;245
+11434300;Yogurt, nonfat milk, flavors other than fruit;;;1820;Yogurt, regular;5;Quantity not specified;170
+11435000;Yogurt, Greek, NS as to type of milk, flavors other than fruit;;;1822;Yogurt, Greek;1;1 5.3 oz container;150
+11435000;Yogurt, Greek, NS as to type of milk, flavors other than fruit;;;1822;Yogurt, Greek;2;1 6 oz container;170
+11435000;Yogurt, Greek, NS as to type of milk, flavors other than fruit;;;1822;Yogurt, Greek;3;1 container, NFS;150
+11435000;Yogurt, Greek, NS as to type of milk, flavors other than fruit;;;1822;Yogurt, Greek;4;1 cup;245
+11435000;Yogurt, Greek, NS as to type of milk, flavors other than fruit;;;1822;Yogurt, Greek;5;Quantity not specified;150
+11435010;Yogurt, Greek, whole milk, flavors other than fruit;;;1822;Yogurt, Greek;1;1 5.3 oz container;150
+11435010;Yogurt, Greek, whole milk, flavors other than fruit;;;1822;Yogurt, Greek;2;1 6 oz container;170
+11435010;Yogurt, Greek, whole milk, flavors other than fruit;;;1822;Yogurt, Greek;3;1 container, NFS;150
+11435010;Yogurt, Greek, whole milk, flavors other than fruit;;;1822;Yogurt, Greek;4;1 cup;245
+11435010;Yogurt, Greek, whole milk, flavors other than fruit;;;1822;Yogurt, Greek;5;Quantity not specified;150
+11435020;Yogurt, Greek, low fat milk, flavors other than fruit;;;1822;Yogurt, Greek;1;1 tube;57
+11435020;Yogurt, Greek, low fat milk, flavors other than fruit;;;1822;Yogurt, Greek;2;1 5.3 oz container;150
+11435020;Yogurt, Greek, low fat milk, flavors other than fruit;;;1822;Yogurt, Greek;3;1 6 oz container;170
+11435020;Yogurt, Greek, low fat milk, flavors other than fruit;;;1822;Yogurt, Greek;4;1 container, NFS;150
+11435020;Yogurt, Greek, low fat milk, flavors other than fruit;;;1822;Yogurt, Greek;5;1 cup;245
+11435020;Yogurt, Greek, low fat milk, flavors other than fruit;;;1822;Yogurt, Greek;6;Quantity not specified;150
+11435030;Yogurt, Greek, nonfat milk, flavors other than fruit;;;1822;Yogurt, Greek;1;1 5.3 oz container;150
+11435030;Yogurt, Greek, nonfat milk, flavors other than fruit;;;1822;Yogurt, Greek;2;1 6 oz container;170
+11435030;Yogurt, Greek, nonfat milk, flavors other than fruit;;;1822;Yogurt, Greek;3;1 container, NFS;150
+11435030;Yogurt, Greek, nonfat milk, flavors other than fruit;;;1822;Yogurt, Greek;4;1 cup;245
+11435030;Yogurt, Greek, nonfat milk, flavors other than fruit;;;1822;Yogurt, Greek;5;Quantity not specified;150
+11435100;Yogurt, Greek, with oats;;;1822;Yogurt, Greek;6;1 5.3 oz container;150
+11435100;Yogurt, Greek, with oats;;;1822;Yogurt, Greek;7;1 container, NFS;150
+11435100;Yogurt, Greek, with oats;;;1822;Yogurt, Greek;8;1 cup;245
+11435100;Yogurt, Greek, with oats;;;1822;Yogurt, Greek;9;Quantity not specified;150
+11436000;Yogurt, liquid;;;1820;Yogurt, regular;1;1 bottle;93
+11436000;Yogurt, liquid;;;1820;Yogurt, regular;2;1 cup;245
+11436000;Yogurt, liquid;;;1820;Yogurt, regular;3;Quantity not specified;93
+11440010;Chipotle dip, yogurt based;;;8412;Dips, gravies, other sauces;1;1 tablespoon;15
+11440010;Chipotle dip, yogurt based;;;8412;Dips, gravies, other sauces;2;1 individual container;70
+11440010;Chipotle dip, yogurt based;;;8412;Dips, gravies, other sauces;3;Quantity not specified;60
+11440020;Dill dip, yogurt based;;;8412;Dips, gravies, other sauces;1;1 tablespoon;15
+11440020;Dill dip, yogurt based;;;8412;Dips, gravies, other sauces;2;1 individual container;70
+11440020;Dill dip, yogurt based;;;8412;Dips, gravies, other sauces;3;Quantity not specified;60
+11440030;Onion dip, yogurt based;;;8412;Dips, gravies, other sauces;1;1 tablespoon;15
+11440030;Onion dip, yogurt based;;;8412;Dips, gravies, other sauces;2;1 individual container;70
+11440030;Onion dip, yogurt based;;;8412;Dips, gravies, other sauces;3;Quantity not specified;60
+11440040;Ranch dip, yogurt based;;;8412;Dips, gravies, other sauces;1;1 tablespoon;15
+11440040;Ranch dip, yogurt based;;;8412;Dips, gravies, other sauces;2;1 individual container;70
+11440040;Ranch dip, yogurt based;;;8412;Dips, gravies, other sauces;3;Quantity not specified;60
+11440050;Spinach dip, yogurt based;;;8412;Dips, gravies, other sauces;1;1 tablespoon;15
+11440050;Spinach dip, yogurt based;;;8412;Dips, gravies, other sauces;2;1 individual container;70
+11440050;Spinach dip, yogurt based;;;8412;Dips, gravies, other sauces;3;Quantity not specified;60
+11440060;Tzatziki dip;;;8412;Dips, gravies, other sauces;1;1 tablespoon;15
+11440060;Tzatziki dip;;;8412;Dips, gravies, other sauces;2;1 individual container;70
+11440060;Tzatziki dip;;;8412;Dips, gravies, other sauces;3;Quantity not specified;60
+11440070;Vegetable dip, yogurt based;;;8412;Dips, gravies, other sauces;1;1 tablespoon;15
+11440070;Vegetable dip, yogurt based;;;8412;Dips, gravies, other sauces;2;1 individual container;70
+11440070;Vegetable dip, yogurt based;;;8412;Dips, gravies, other sauces;3;Quantity not specified;60
+11446000;Yogurt parfait, low fat, with fruit;;;1820;Yogurt, regular;1;1 McDonald's parfait;150
+11446000;Yogurt parfait, low fat, with fruit;;;1820;Yogurt, regular;2;Quantity not specified;150
+11459990;Frozen yogurt, NFS;;;5802;Ice cream and frozen dairy desserts;1;1 cup;175
+11459990;Frozen yogurt, NFS;;;5802;Ice cream and frozen dairy desserts;2;1 scoop;160
+11459990;Frozen yogurt, NFS;;;5802;Ice cream and frozen dairy desserts;3;1 small ice cream cup;160
+11459990;Frozen yogurt, NFS;;;5802;Ice cream and frozen dairy desserts;4;1 medium ice cream cup;320
+11459990;Frozen yogurt, NFS;;;5802;Ice cream and frozen dairy desserts;5;1 large ice cream cup;480
+11459990;Frozen yogurt, NFS;;;5802;Ice cream and frozen dairy desserts;6;Quantity not specified;175
+11460000;Frozen yogurt, vanilla;;;5802;Ice cream and frozen dairy desserts;1;1 cup;175
+11460000;Frozen yogurt, vanilla;;;5802;Ice cream and frozen dairy desserts;2;1 scoop;160
+11460000;Frozen yogurt, vanilla;;;5802;Ice cream and frozen dairy desserts;3;1 small ice cream cup;160
+11460000;Frozen yogurt, vanilla;;;5802;Ice cream and frozen dairy desserts;4;1 medium ice cream cup;320
+11460000;Frozen yogurt, vanilla;;;5802;Ice cream and frozen dairy desserts;5;1 large ice cream cup;480
+11460000;Frozen yogurt, vanilla;;;5802;Ice cream and frozen dairy desserts;6;Quantity not specified;175
+11460100;Frozen yogurt, chocolate;;;5802;Ice cream and frozen dairy desserts;1;1 cup;175
+11460100;Frozen yogurt, chocolate;;;5802;Ice cream and frozen dairy desserts;2;1 scoop;160
+11460100;Frozen yogurt, chocolate;;;5802;Ice cream and frozen dairy desserts;3;1 small ice cream cup;160
+11460100;Frozen yogurt, chocolate;;;5802;Ice cream and frozen dairy desserts;4;1 medium ice cream cup;320
+11460100;Frozen yogurt, chocolate;;;5802;Ice cream and frozen dairy desserts;5;1 large ice cream cup;480
+11460100;Frozen yogurt, chocolate;;;5802;Ice cream and frozen dairy desserts;6;Quantity not specified;175
+11460500;Frozen yogurt, soft serve, vanilla;;;5802;Ice cream and frozen dairy desserts;1;1 cup;175
+11460500;Frozen yogurt, soft serve, vanilla;;;5802;Ice cream and frozen dairy desserts;2;Quantity not specified;175
+11460510;Frozen yogurt, soft serve, chocolate;;;5802;Ice cream and frozen dairy desserts;1;1 cup;175
+11460510;Frozen yogurt, soft serve, chocolate;;;5802;Ice cream and frozen dairy desserts;2;Quantity not specified;175
+11461200;Frozen yogurt sandwich;;;5802;Ice cream and frozen dairy desserts;1;1 sandwich;75
+11461200;Frozen yogurt sandwich;;;5802;Ice cream and frozen dairy desserts;2;Quantity not specified;75
+11461210;Frozen yogurt bar, vanilla;;;5802;Ice cream and frozen dairy desserts;1;1 bar;65
+11461210;Frozen yogurt bar, vanilla;;;5802;Ice cream and frozen dairy desserts;2;Quantity not specified;65
+11461220;Frozen yogurt bar, chocolate;;;5802;Ice cream and frozen dairy desserts;1;1 bar;65
+11461220;Frozen yogurt bar, chocolate;;;5802;Ice cream and frozen dairy desserts;2;Quantity not specified;65
+11461250;Frozen yogurt cone, chocolate;;;5802;Ice cream and frozen dairy desserts;1;1 cone;125
+11461250;Frozen yogurt cone, chocolate;;;5802;Ice cream and frozen dairy desserts;2;Quantity not specified;125
+11461260;Frozen yogurt cone, vanilla;;;5802;Ice cream and frozen dairy desserts;1;1 cone;125
+11461260;Frozen yogurt cone, vanilla;;;5802;Ice cream and frozen dairy desserts;2;Quantity not specified;125
+11461300;Frozen yogurt cone, vanilla, waffle cone;;;5802;Ice cream and frozen dairy desserts;1;1 cone;255
+11461300;Frozen yogurt cone, vanilla, waffle cone;;;5802;Ice cream and frozen dairy desserts;2;Quantity not specified;255
+11461320;Frozen yogurt cone, chocolate, waffle cone;;;5802;Ice cream and frozen dairy desserts;1;1 cone;255
+11461320;Frozen yogurt cone, chocolate, waffle cone;;;5802;Ice cream and frozen dairy desserts;2;Quantity not specified;255
+11480010;Yogurt, whole milk, baby food;;;9010;Baby food: yogurt;1;1 container;113
+11480010;Yogurt, whole milk, baby food;;;9010;Baby food: yogurt;2;Quantity not specified;85
+11480020;Yogurt, whole milk, baby food, with fruit and multigrain cereal puree, NFS;;;9010;Baby food: yogurt;1;1 container;113
+11480020;Yogurt, whole milk, baby food, with fruit and multigrain cereal puree, NFS;;;9010;Baby food: yogurt;2;Quantity not specified;85
+11480030;Yogurt, whole milk, baby food, with fruit and multigrain cereal puree, plus iron;;;9010;Baby food: yogurt;1;1 container;113
+11480030;Yogurt, whole milk, baby food, with fruit and multigrain cereal puree, plus iron;;;9010;Baby food: yogurt;2;Quantity not specified;85
+11480040;Yogurt, whole milk, baby food, with fruit and multigrain cereal puree, plus DHA;;;9010;Baby food: yogurt;1;1 container;113
+11480040;Yogurt, whole milk, baby food, with fruit and multigrain cereal puree, plus DHA;;;9010;Baby food: yogurt;2;Quantity not specified;85
+11511000;Chocolate milk, NFS;;;1208;Flavored milk, nonfat;1;1 cup;248
+11511000;Chocolate milk, NFS;;;1208;Flavored milk, nonfat;2;1 fl oz;31
+11511000;Chocolate milk, NFS;;;1208;Flavored milk, nonfat;3;Quantity not specified;248
+11511000;Chocolate milk, NFS;;;1208;Flavored milk, nonfat;5;1 individual school container;248
+11511100;Chocolate milk, ready to drink, whole;;;1202;Flavored milk, whole;1;1 cup;248
+11511100;Chocolate milk, ready to drink, whole;;;1202;Flavored milk, whole;2;1 fl oz;31
+11511100;Chocolate milk, ready to drink, whole;;;1202;Flavored milk, whole;3;Quantity not specified;248
+11511100;Chocolate milk, ready to drink, whole;;;1202;Flavored milk, whole;5;1 individual school container;248
+11511200;Chocolate milk, ready to drink, reduced fat;;;1204;Flavored milk, reduced fat;1;1 cup;248
+11511200;Chocolate milk, ready to drink, reduced fat;;;1204;Flavored milk, reduced fat;2;1 fl oz;31
+11511200;Chocolate milk, ready to drink, reduced fat;;;1204;Flavored milk, reduced fat;3;Quantity not specified;248
+11511200;Chocolate milk, ready to drink, reduced fat;;;1204;Flavored milk, reduced fat;5;1 individual school container;248
+11511300;Chocolate milk, ready to drink, fat free;;;1208;Flavored milk, nonfat;1;1 cup;248
+11511300;Chocolate milk, ready to drink, fat free;;;1208;Flavored milk, nonfat;2;1 fl oz;31
+11511300;Chocolate milk, ready to drink, fat free;;;1208;Flavored milk, nonfat;3;Quantity not specified;248
+11511300;Chocolate milk, ready to drink, fat free;;;1208;Flavored milk, nonfat;5;1 individual school container;248
+11511400;Chocolate milk, ready to drink, low fat;;;1206;Flavored milk, lowfat;1;1 fl oz;31
+11511400;Chocolate milk, ready to drink, low fat;;;1206;Flavored milk, lowfat;2;1 cup;248
+11511400;Chocolate milk, ready to drink, low fat;;;1206;Flavored milk, lowfat;3;1 individual school container;248
+11511400;Chocolate milk, ready to drink, low fat;;;1206;Flavored milk, lowfat;4;Quantity not specified;248
+11511550;Chocolate milk, ready to drink, reduced sugar, NS as to milk;;;1206;Flavored milk, lowfat;1;1 cup;248
+11511550;Chocolate milk, ready to drink, reduced sugar, NS as to milk;;;1206;Flavored milk, lowfat;2;1 fl oz;31
+11511550;Chocolate milk, ready to drink, reduced sugar, NS as to milk;;;1206;Flavored milk, lowfat;3;Quantity not specified;248
+11511600;Chocolate milk, ready to drink, low fat (Nesquik);;;1206;Flavored milk, lowfat;1;1 cup;248
+11511600;Chocolate milk, ready to drink, low fat (Nesquik);;;1206;Flavored milk, lowfat;2;1 fl oz;31
+11511600;Chocolate milk, ready to drink, low fat (Nesquik);;;1206;Flavored milk, lowfat;3;Quantity not specified;248
+11511610;Chocolate milk, ready to drink, fat free (Nesquik);;;1208;Flavored milk, nonfat;1;1 cup;248
+11511610;Chocolate milk, ready to drink, fat free (Nesquik);;;1208;Flavored milk, nonfat;2;1 fl oz;31
+11511610;Chocolate milk, ready to drink, fat free (Nesquik);;;1208;Flavored milk, nonfat;3;Quantity not specified;248
+11511700;Chocolate milk, ready to drink, low fat, no sugar added (Nesquik);;;1206;Flavored milk, lowfat;1;1 cup;248
+11511700;Chocolate milk, ready to drink, low fat, no sugar added (Nesquik);;;1206;Flavored milk, lowfat;2;1 fl oz;31
+11511700;Chocolate milk, ready to drink, low fat, no sugar added (Nesquik);;;1206;Flavored milk, lowfat;3;Quantity not specified;248
+11512010;Hot chocolate / Cocoa, ready to drink;;;1204;Flavored milk, reduced fat;1;1 cup;248
+11512010;Hot chocolate / Cocoa, ready to drink;;;1204;Flavored milk, reduced fat;2;1 fl oz;31
+11512010;Hot chocolate / Cocoa, ready to drink;;;1204;Flavored milk, reduced fat;3;Quantity not specified;248
+11512020;Hot chocolate / Cocoa, ready to drink, made with nonfat milk;;;1208;Flavored milk, nonfat;1;1 cup;248
+11512020;Hot chocolate / Cocoa, ready to drink, made with nonfat milk;;;1208;Flavored milk, nonfat;2;1 fl oz;31
+11512020;Hot chocolate / Cocoa, ready to drink, made with nonfat milk;;;1208;Flavored milk, nonfat;3;Quantity not specified;248
+11512030;Hot chocolate / Cocoa, ready to drink, made with non-dairy milk;;;1404;Milk substitutes;1;1 cup;248
+11512030;Hot chocolate / Cocoa, ready to drink, made with non-dairy milk;;;1404;Milk substitutes;2;1 fl oz;31
+11512030;Hot chocolate / Cocoa, ready to drink, made with non-dairy milk;;;1404;Milk substitutes;3;Quantity not specified;248
+11512100;Hot chocolate / Cocoa, ready to drink, with whipped cream;;;1204;Flavored milk, reduced fat;1;1 cup;248
+11512100;Hot chocolate / Cocoa, ready to drink, with whipped cream;;;1204;Flavored milk, reduced fat;2;1 fl oz;31
+11512100;Hot chocolate / Cocoa, ready to drink, with whipped cream;;;1204;Flavored milk, reduced fat;3;Quantity not specified;248
+11512110;Hot chocolate / Cocoa, ready to drink, made with nonfat milk and whipped cream;;;1208;Flavored milk, nonfat;1;1 cup;248
+11512110;Hot chocolate / Cocoa, ready to drink, made with nonfat milk and whipped cream;;;1208;Flavored milk, nonfat;2;1 fl oz;31
+11512110;Hot chocolate / Cocoa, ready to drink, made with nonfat milk and whipped cream;;;1208;Flavored milk, nonfat;3;Quantity not specified;248
+11512120;Hot chocolate / Cocoa, ready to drink, made with non-dairy milk and whipped cream;;;1404;Milk substitutes;1;1 cup;248
+11512120;Hot chocolate / Cocoa, ready to drink, made with non-dairy milk and whipped cream;;;1404;Milk substitutes;2;1 fl oz;31
+11512120;Hot chocolate / Cocoa, ready to drink, made with non-dairy milk and whipped cream;;;1404;Milk substitutes;3;Quantity not specified;248
+11513000;Chocolate milk, made from dry mix, NS as to type of milk;;;1204;Flavored milk, reduced fat;1;1 cup;248
+11513000;Chocolate milk, made from dry mix, NS as to type of milk;;;1204;Flavored milk, reduced fat;2;1 fl oz;31
+11513000;Chocolate milk, made from dry mix, NS as to type of milk;;;1204;Flavored milk, reduced fat;3;Quantity not specified;248
+11513100;Chocolate milk, made from dry mix with whole milk;;;1202;Flavored milk, whole;1;1 cup;248
+11513100;Chocolate milk, made from dry mix with whole milk;;;1202;Flavored milk, whole;2;1 fl oz;31
+11513100;Chocolate milk, made from dry mix with whole milk;;;1202;Flavored milk, whole;3;Quantity not specified;248
+11513150;Chocolate milk, made from dry mix with reduced fat milk;;;1204;Flavored milk, reduced fat;1;1 cup;248
+11513150;Chocolate milk, made from dry mix with reduced fat milk;;;1204;Flavored milk, reduced fat;2;1 fl oz;31
+11513150;Chocolate milk, made from dry mix with reduced fat milk;;;1204;Flavored milk, reduced fat;3;Quantity not specified;248
+11513200;Chocolate milk, made from dry mix with low fat milk;;;1206;Flavored milk, lowfat;1;1 cup;248
+11513200;Chocolate milk, made from dry mix with low fat milk;;;1206;Flavored milk, lowfat;2;1 fl oz;31
+11513200;Chocolate milk, made from dry mix with low fat milk;;;1206;Flavored milk, lowfat;3;Quantity not specified;248
+11513300;Chocolate milk, made from dry mix with fat free milk;;;1208;Flavored milk, nonfat;1;1 cup;248
+11513300;Chocolate milk, made from dry mix with fat free milk;;;1208;Flavored milk, nonfat;2;1 fl oz;31
+11513300;Chocolate milk, made from dry mix with fat free milk;;;1208;Flavored milk, nonfat;3;Quantity not specified;248
+11513310;Chocolate milk, made from dry mix with non-dairy milk;;;1404;Milk substitutes;1;1 cup;248
+11513310;Chocolate milk, made from dry mix with non-dairy milk;;;1404;Milk substitutes;2;1 fl oz;31
+11513310;Chocolate milk, made from dry mix with non-dairy milk;;;1404;Milk substitutes;3;Quantity not specified;248
+11513350;Chocolate milk, made from reduced sugar mix, NS as to type of milk;;;1204;Flavored milk, reduced fat;1;1 cup;248
+11513350;Chocolate milk, made from reduced sugar mix, NS as to type of milk;;;1204;Flavored milk, reduced fat;2;1 fl oz;31
+11513350;Chocolate milk, made from reduced sugar mix, NS as to type of milk;;;1204;Flavored milk, reduced fat;3;Quantity not specified;248
+11513355;Chocolate milk, made from reduced sugar mix with whole milk;;;1202;Flavored milk, whole;1;1 cup;248
+11513355;Chocolate milk, made from reduced sugar mix with whole milk;;;1202;Flavored milk, whole;2;1 fl oz;31
+11513355;Chocolate milk, made from reduced sugar mix with whole milk;;;1202;Flavored milk, whole;3;Quantity not specified;248
+11513360;Chocolate milk, made from reduced sugar mix with reduced fat milk;;;1204;Flavored milk, reduced fat;1;1 cup;248
+11513360;Chocolate milk, made from reduced sugar mix with reduced fat milk;;;1204;Flavored milk, reduced fat;2;1 fl oz;31
+11513360;Chocolate milk, made from reduced sugar mix with reduced fat milk;;;1204;Flavored milk, reduced fat;3;Quantity not specified;248
+11513365;Chocolate milk, made from reduced sugar mix with low fat milk;;;1206;Flavored milk, lowfat;1;1 cup;248
+11513365;Chocolate milk, made from reduced sugar mix with low fat milk;;;1206;Flavored milk, lowfat;2;1 fl oz;31
+11513365;Chocolate milk, made from reduced sugar mix with low fat milk;;;1206;Flavored milk, lowfat;3;Quantity not specified;248
+11513370;Chocolate milk, made from reduced sugar mix with fat free milk;;;1208;Flavored milk, nonfat;1;1 cup;248
+11513370;Chocolate milk, made from reduced sugar mix with fat free milk;;;1208;Flavored milk, nonfat;2;1 fl oz;31
+11513370;Chocolate milk, made from reduced sugar mix with fat free milk;;;1208;Flavored milk, nonfat;3;Quantity not specified;248
+11513375;Chocolate milk, made from reduced sugar mix with non-dairy milk;;;1404;Milk substitutes;1;1 cup;248
+11513375;Chocolate milk, made from reduced sugar mix with non-dairy milk;;;1404;Milk substitutes;2;1 fl oz;31
+11513375;Chocolate milk, made from reduced sugar mix with non-dairy milk;;;1404;Milk substitutes;3;Quantity not specified;248
+11513380;Chocolate milk, made from dry mix, NS as to type of milk (Nesquik);;;1204;Flavored milk, reduced fat;1;1 cup;248
+11513380;Chocolate milk, made from dry mix, NS as to type of milk (Nesquik);;;1204;Flavored milk, reduced fat;2;1 fl oz;31
+11513380;Chocolate milk, made from dry mix, NS as to type of milk (Nesquik);;;1204;Flavored milk, reduced fat;3;Quantity not specified;248
+11513381;Chocolate milk, made from dry mix with whole milk (Nesquik);;;1202;Flavored milk, whole;1;1 cup;248
+11513381;Chocolate milk, made from dry mix with whole milk (Nesquik);;;1202;Flavored milk, whole;2;1 fl oz;31
+11513381;Chocolate milk, made from dry mix with whole milk (Nesquik);;;1202;Flavored milk, whole;3;Quantity not specified;248
+11513382;Chocolate milk, made from dry mix with reduced fat milk (Nesquik);;;1204;Flavored milk, reduced fat;1;1 cup;248
+11513382;Chocolate milk, made from dry mix with reduced fat milk (Nesquik);;;1204;Flavored milk, reduced fat;2;1 fl oz;31
+11513382;Chocolate milk, made from dry mix with reduced fat milk (Nesquik);;;1204;Flavored milk, reduced fat;3;Quantity not specified;248
+11513383;Chocolate milk, made from dry mix with low fat milk (Nesquik);;;1206;Flavored milk, lowfat;1;1 cup;248
+11513383;Chocolate milk, made from dry mix with low fat milk (Nesquik);;;1206;Flavored milk, lowfat;2;1 fl oz;31
+11513383;Chocolate milk, made from dry mix with low fat milk (Nesquik);;;1206;Flavored milk, lowfat;3;Quantity not specified;248
+11513384;Chocolate milk, made from dry mix with fat free milk (Nesquik);;;1208;Flavored milk, nonfat;1;1 cup;248
+11513384;Chocolate milk, made from dry mix with fat free milk (Nesquik);;;1208;Flavored milk, nonfat;2;1 fl oz;31
+11513384;Chocolate milk, made from dry mix with fat free milk (Nesquik);;;1208;Flavored milk, nonfat;3;Quantity not specified;248
+11513385;Chocolate milk, made from dry mix with non-dairy milk (Nesquik);;;1404;Milk substitutes;1;1 cup;248
+11513385;Chocolate milk, made from dry mix with non-dairy milk (Nesquik);;;1404;Milk substitutes;2;1 fl oz;31
+11513385;Chocolate milk, made from dry mix with non-dairy milk (Nesquik);;;1404;Milk substitutes;3;Quantity not specified;248
+11513390;Chocolate milk, made from no sugar added dry mix, NS as to type of milk (Nesquik);;;1204;Flavored milk, reduced fat;1;1 cup;248
+11513390;Chocolate milk, made from no sugar added dry mix, NS as to type of milk (Nesquik);;;1204;Flavored milk, reduced fat;2;1 fl oz;31
+11513390;Chocolate milk, made from no sugar added dry mix, NS as to type of milk (Nesquik);;;1204;Flavored milk, reduced fat;3;Quantity not specified;248
+11513391;Chocolate milk, made from no sugar added dry mix with whole milk (Nesquik);;;1202;Flavored milk, whole;1;1 cup;248
+11513391;Chocolate milk, made from no sugar added dry mix with whole milk (Nesquik);;;1202;Flavored milk, whole;2;1 fl oz;31
+11513391;Chocolate milk, made from no sugar added dry mix with whole milk (Nesquik);;;1202;Flavored milk, whole;3;Quantity not specified;248
+11513392;Chocolate milk, made from no sugar added dry mix with reduced fat milk (Nesquik);;;1204;Flavored milk, reduced fat;1;1 cup;248
+11513392;Chocolate milk, made from no sugar added dry mix with reduced fat milk (Nesquik);;;1204;Flavored milk, reduced fat;2;1 fl oz;31
+11513392;Chocolate milk, made from no sugar added dry mix with reduced fat milk (Nesquik);;;1204;Flavored milk, reduced fat;3;Quantity not specified;248
+11513393;Chocolate milk, made from no sugar added dry mix with low fat milk (Nesquik);;;1206;Flavored milk, lowfat;1;1 cup;248
+11513393;Chocolate milk, made from no sugar added dry mix with low fat milk (Nesquik);;;1206;Flavored milk, lowfat;2;1 fl oz;31
+11513393;Chocolate milk, made from no sugar added dry mix with low fat milk (Nesquik);;;1206;Flavored milk, lowfat;3;Quantity not specified;248
+11513394;Chocolate milk, made from no sugar added dry mix with fat free milk  (Nesquik);;;1208;Flavored milk, nonfat;1;1 cup;248
+11513394;Chocolate milk, made from no sugar added dry mix with fat free milk  (Nesquik);;;1208;Flavored milk, nonfat;2;1 fl oz;31
+11513394;Chocolate milk, made from no sugar added dry mix with fat free milk  (Nesquik);;;1208;Flavored milk, nonfat;3;Quantity not specified;248
+11513395;Chocolate milk, made from no sugar added dry mix with non-dairy milk (Nesquik);;;1404;Milk substitutes;1;1 cup;248
+11513395;Chocolate milk, made from no sugar added dry mix with non-dairy milk (Nesquik);;;1404;Milk substitutes;2;1 fl oz;31
+11513395;Chocolate milk, made from no sugar added dry mix with non-dairy milk (Nesquik);;;1404;Milk substitutes;3;Quantity not specified;248
+11513400;Chocolate milk, made from syrup, NS as to type of milk;;;1204;Flavored milk, reduced fat;1;1 cup;248
+11513400;Chocolate milk, made from syrup, NS as to type of milk;;;1204;Flavored milk, reduced fat;2;1 fl oz;31
+11513400;Chocolate milk, made from syrup, NS as to type of milk;;;1204;Flavored milk, reduced fat;3;Quantity not specified;248
+11513500;Chocolate milk, made from syrup with whole milk;;;1202;Flavored milk, whole;1;1 cup;248
+11513500;Chocolate milk, made from syrup with whole milk;;;1202;Flavored milk, whole;2;1 fl oz;31
+11513500;Chocolate milk, made from syrup with whole milk;;;1202;Flavored milk, whole;3;Quantity not specified;248
+11513550;Chocolate milk, made from syrup with reduced fat milk;;;1204;Flavored milk, reduced fat;1;1 cup;248
+11513550;Chocolate milk, made from syrup with reduced fat milk;;;1204;Flavored milk, reduced fat;2;1 fl oz;31
+11513550;Chocolate milk, made from syrup with reduced fat milk;;;1204;Flavored milk, reduced fat;3;Quantity not specified;248
+11513600;Chocolate milk, made from syrup with low fat milk;;;1206;Flavored milk, lowfat;1;1 cup;248
+11513600;Chocolate milk, made from syrup with low fat milk;;;1206;Flavored milk, lowfat;2;1 fl oz;31
+11513600;Chocolate milk, made from syrup with low fat milk;;;1206;Flavored milk, lowfat;3;Quantity not specified;248
+11513700;Chocolate milk, made from syrup with fat free milk;;;1208;Flavored milk, nonfat;1;1 cup;248
+11513700;Chocolate milk, made from syrup with fat free milk;;;1208;Flavored milk, nonfat;2;1 fl oz;31
+11513700;Chocolate milk, made from syrup with fat free milk;;;1208;Flavored milk, nonfat;3;Quantity not specified;248
+11513750;Chocolate milk, made from syrup with non-dairy milk;;;1404;Milk substitutes;1;1 cup;248
+11513750;Chocolate milk, made from syrup with non-dairy milk;;;1404;Milk substitutes;2;1 fl oz;31
+11513750;Chocolate milk, made from syrup with non-dairy milk;;;1404;Milk substitutes;3;Quantity not specified;248
+11513800;Chocolate milk, made from light syrup, NS as to type of milk;;;1204;Flavored milk, reduced fat;1;1 cup;248
+11513800;Chocolate milk, made from light syrup, NS as to type of milk;;;1204;Flavored milk, reduced fat;2;1 fl oz;31
+11513800;Chocolate milk, made from light syrup, NS as to type of milk;;;1204;Flavored milk, reduced fat;3;Quantity not specified;248
+11513801;Chocolate milk, made from light syrup with whole milk;;;1202;Flavored milk, whole;1;1 cup;248
+11513801;Chocolate milk, made from light syrup with whole milk;;;1202;Flavored milk, whole;2;1 fl oz;31
+11513801;Chocolate milk, made from light syrup with whole milk;;;1202;Flavored milk, whole;3;Quantity not specified;248
+11513802;Chocolate milk, made from light syrup with reduced fat milk;;;1204;Flavored milk, reduced fat;1;1 cup;248
+11513802;Chocolate milk, made from light syrup with reduced fat milk;;;1204;Flavored milk, reduced fat;2;1 fl oz;31
+11513802;Chocolate milk, made from light syrup with reduced fat milk;;;1204;Flavored milk, reduced fat;3;Quantity not specified;248
+11513803;Chocolate milk, made from light syrup with low fat milk;;;1206;Flavored milk, lowfat;1;1 cup;248
+11513803;Chocolate milk, made from light syrup with low fat milk;;;1206;Flavored milk, lowfat;2;1 fl oz;31
+11513803;Chocolate milk, made from light syrup with low fat milk;;;1206;Flavored milk, lowfat;3;Quantity not specified;248
+11513804;Chocolate milk, made from light syrup with fat free milk;;;1208;Flavored milk, nonfat;1;1 cup;248
+11513804;Chocolate milk, made from light syrup with fat free milk;;;1208;Flavored milk, nonfat;2;1 fl oz;31
+11513804;Chocolate milk, made from light syrup with fat free milk;;;1208;Flavored milk, nonfat;3;Quantity not specified;248
+11513805;Chocolate milk, made from light syrup with non-dairy milk;;;1404;Milk substitutes;1;1 cup;248
+11513805;Chocolate milk, made from light syrup with non-dairy milk;;;1404;Milk substitutes;2;1 fl oz;31
+11513805;Chocolate milk, made from light syrup with non-dairy milk;;;1404;Milk substitutes;3;Quantity not specified;248
+11513850;Chocolate milk, made from sugar free syrup, NS as to type of milk;;;1204;Flavored milk, reduced fat;1;1 cup;248
+11513850;Chocolate milk, made from sugar free syrup, NS as to type of milk;;;1204;Flavored milk, reduced fat;2;1 fl oz;31
+11513850;Chocolate milk, made from sugar free syrup, NS as to type of milk;;;1204;Flavored milk, reduced fat;3;Quantity not specified;248
+11513851;Chocolate milk, made from sugar free syrup with whole milk;;;1202;Flavored milk, whole;1;1 cup;248
+11513851;Chocolate milk, made from sugar free syrup with whole milk;;;1202;Flavored milk, whole;2;1 fl oz;31
+11513851;Chocolate milk, made from sugar free syrup with whole milk;;;1202;Flavored milk, whole;3;Quantity not specified;248
+11513852;Chocolate milk, made from sugar free syrup with reduced fat milk;;;1204;Flavored milk, reduced fat;1;1 cup;248
+11513852;Chocolate milk, made from sugar free syrup with reduced fat milk;;;1204;Flavored milk, reduced fat;2;1 fl oz;31
+11513852;Chocolate milk, made from sugar free syrup with reduced fat milk;;;1204;Flavored milk, reduced fat;3;Quantity not specified;248
+11513853;Chocolate milk, made from sugar free syrup with low fat milk;;;1206;Flavored milk, lowfat;1;1 cup;248
+11513853;Chocolate milk, made from sugar free syrup with low fat milk;;;1206;Flavored milk, lowfat;2;1 fl oz;31
+11513853;Chocolate milk, made from sugar free syrup with low fat milk;;;1206;Flavored milk, lowfat;3;Quantity not specified;248
+11513854;Chocolate milk, made from sugar free syrup with fat free milk;;;1208;Flavored milk, nonfat;1;1 cup;248
+11513854;Chocolate milk, made from sugar free syrup with fat free milk;;;1208;Flavored milk, nonfat;2;1 fl oz;31
+11513854;Chocolate milk, made from sugar free syrup with fat free milk;;;1208;Flavored milk, nonfat;3;Quantity not specified;248
+11513855;Chocolate milk, made from sugar free syrup with non-dairy milk;;;1404;Milk substitutes;1;1 cup;248
+11513855;Chocolate milk, made from sugar free syrup with non-dairy milk;;;1404;Milk substitutes;2;1 fl oz;31
+11513855;Chocolate milk, made from sugar free syrup with non-dairy milk;;;1404;Milk substitutes;3;Quantity not specified;248
+11514100;Hot chocolate / Cocoa, made with dry mix and water;;;1208;Flavored milk, nonfat;2;1 cup;248
+11514100;Hot chocolate / Cocoa, made with dry mix and water;;;1208;Flavored milk, nonfat;3;1 fl oz;31
+11514100;Hot chocolate / Cocoa, made with dry mix and water;;;1208;Flavored milk, nonfat;4;Quantity not specified;206
+11514100;Hot chocolate / Cocoa, made with dry mix and water;;;1208;Flavored milk, nonfat;5;1 packet, reconstituted;206
+11514110;Hot chocolate / Cocoa, made with dry mix and whole milk;;;1202;Flavored milk, whole;1;1 cup;248
+11514110;Hot chocolate / Cocoa, made with dry mix and whole milk;;;1202;Flavored milk, whole;2;1 fl oz;31
+11514110;Hot chocolate / Cocoa, made with dry mix and whole milk;;;1202;Flavored milk, whole;3;1 packet, reconstituted;211
+11514110;Hot chocolate / Cocoa, made with dry mix and whole milk;;;1202;Flavored milk, whole;4;Quantity not specified;211
+11514120;Hot chocolate / Cocoa, made with dry mix and reduced fat milk;;;1204;Flavored milk, reduced fat;1;1 cup;248
+11514120;Hot chocolate / Cocoa, made with dry mix and reduced fat milk;;;1204;Flavored milk, reduced fat;2;1 fl oz;31
+11514120;Hot chocolate / Cocoa, made with dry mix and reduced fat milk;;;1204;Flavored milk, reduced fat;3;1 packet, reconstituted;211
+11514120;Hot chocolate / Cocoa, made with dry mix and reduced fat milk;;;1204;Flavored milk, reduced fat;4;Quantity not specified;211
+11514130;Hot chocolate / Cocoa, made with dry mix and low fat milk;;;1206;Flavored milk, lowfat;1;1 cup;248
+11514130;Hot chocolate / Cocoa, made with dry mix and low fat milk;;;1206;Flavored milk, lowfat;2;1 fl oz;31
+11514130;Hot chocolate / Cocoa, made with dry mix and low fat milk;;;1206;Flavored milk, lowfat;3;1 packet, reconstituted;211
+11514130;Hot chocolate / Cocoa, made with dry mix and low fat milk;;;1206;Flavored milk, lowfat;4;Quantity not specified;211
+11514140;Hot chocolate / Cocoa, made with dry mix and fat free milk;;;1208;Flavored milk, nonfat;1;1 cup;248
+11514140;Hot chocolate / Cocoa, made with dry mix and fat free milk;;;1208;Flavored milk, nonfat;2;1 fl oz;31
+11514140;Hot chocolate / Cocoa, made with dry mix and fat free milk;;;1208;Flavored milk, nonfat;3;1 packet, reconstituted;211
+11514140;Hot chocolate / Cocoa, made with dry mix and fat free milk;;;1208;Flavored milk, nonfat;4;Quantity not specified;211
+11514150;Hot chocolate / Cocoa, made with dry mix and non-dairy milk;;;1404;Milk substitutes;1;1 cup;248
+11514150;Hot chocolate / Cocoa, made with dry mix and non-dairy milk;;;1404;Milk substitutes;2;1 fl oz;31
+11514150;Hot chocolate / Cocoa, made with dry mix and non-dairy milk;;;1404;Milk substitutes;3;1 packet, reconstituted;211
+11514150;Hot chocolate / Cocoa, made with dry mix and non-dairy milk;;;1404;Milk substitutes;4;Quantity not specified;211
+11514310;Hot chocolate / Cocoa, made with no sugar added dry mix and water;;;1208;Flavored milk, nonfat;1;1 packet, reconstituted;194
+11514310;Hot chocolate / Cocoa, made with no sugar added dry mix and water;;;1208;Flavored milk, nonfat;2;1 cup;248
+11514310;Hot chocolate / Cocoa, made with no sugar added dry mix and water;;;1208;Flavored milk, nonfat;3;1 fl oz;31
+11514310;Hot chocolate / Cocoa, made with no sugar added dry mix and water;;;1208;Flavored milk, nonfat;4;Quantity not specified;194
+11514320;Hot chocolate / Cocoa, made with no sugar added dry mix and whole milk;;;1202;Flavored milk, whole;1;1 packet, reconstituted;199
+11514320;Hot chocolate / Cocoa, made with no sugar added dry mix and whole milk;;;1202;Flavored milk, whole;2;1 cup;248
+11514320;Hot chocolate / Cocoa, made with no sugar added dry mix and whole milk;;;1202;Flavored milk, whole;3;1 fl oz;31
+11514320;Hot chocolate / Cocoa, made with no sugar added dry mix and whole milk;;;1202;Flavored milk, whole;4;Quantity not specified;199
+11514330;Hot chocolate / Cocoa, made with no sugar added dry mix and reduced fat milk;;;1204;Flavored milk, reduced fat;1;1 packet, reconstituted;199
+11514330;Hot chocolate / Cocoa, made with no sugar added dry mix and reduced fat milk;;;1204;Flavored milk, reduced fat;2;1 cup;248
+11514330;Hot chocolate / Cocoa, made with no sugar added dry mix and reduced fat milk;;;1204;Flavored milk, reduced fat;3;1 fl oz;31
+11514330;Hot chocolate / Cocoa, made with no sugar added dry mix and reduced fat milk;;;1204;Flavored milk, reduced fat;4;Quantity not specified;199
+11514340;Hot chocolate / Cocoa, made with no sugar added dry mix and low fat milk;;;1206;Flavored milk, lowfat;1;1 packet, reconstituted;199
+11514340;Hot chocolate / Cocoa, made with no sugar added dry mix and low fat milk;;;1206;Flavored milk, lowfat;2;1 cup;248
+11514340;Hot chocolate / Cocoa, made with no sugar added dry mix and low fat milk;;;1206;Flavored milk, lowfat;3;1 fl oz;31
+11514340;Hot chocolate / Cocoa, made with no sugar added dry mix and low fat milk;;;1206;Flavored milk, lowfat;4;Quantity not specified;199
+11514350;Hot chocolate / Cocoa, made with no sugar added dry mix and fat free milk;;;1208;Flavored milk, nonfat;1;1 packet, reconstituted;199
+11514350;Hot chocolate / Cocoa, made with no sugar added dry mix and fat free milk;;;1208;Flavored milk, nonfat;2;1 cup;248
+11514350;Hot chocolate / Cocoa, made with no sugar added dry mix and fat free milk;;;1208;Flavored milk, nonfat;3;1 fl oz;31
+11514350;Hot chocolate / Cocoa, made with no sugar added dry mix and fat free milk;;;1208;Flavored milk, nonfat;4;Quantity not specified;199
+11514360;Hot chocolate / Cocoa, made with no sugar added dry mix and non-dairy milk;;;1404;Milk substitutes;1;1 packet, reconstituted;199
+11514360;Hot chocolate / Cocoa, made with no sugar added dry mix and non-dairy milk;;;1404;Milk substitutes;2;1 cup;248
+11514360;Hot chocolate / Cocoa, made with no sugar added dry mix and non-dairy milk;;;1404;Milk substitutes;3;1 fl oz;31
+11514360;Hot chocolate / Cocoa, made with no sugar added dry mix and non-dairy milk;;;1404;Milk substitutes;4;Quantity not specified;199
+11519040;Strawberry milk, NFS;;;1204;Flavored milk, reduced fat;1;1 fl oz;31
+11519040;Strawberry milk, NFS;;;1204;Flavored milk, reduced fat;2;1 cup;248
+11519040;Strawberry milk, NFS;;;1204;Flavored milk, reduced fat;3;1 individual school container;248
+11519040;Strawberry milk, NFS;;;1204;Flavored milk, reduced fat;4;Quantity not specified;248
+11519050;Strawberry milk, whole;;;1202;Flavored milk, whole;1;1 cup;248
+11519050;Strawberry milk, whole;;;1202;Flavored milk, whole;2;1 fl oz;31
+11519050;Strawberry milk, whole;;;1202;Flavored milk, whole;3;Quantity not specified;248
+11519050;Strawberry milk, whole;;;1202;Flavored milk, whole;5;1 individual school container;248
+11519105;Strawberry milk, reduced fat;;;1204;Flavored milk, reduced fat;1;1 cup;248
+11519105;Strawberry milk, reduced fat;;;1204;Flavored milk, reduced fat;2;1 fl oz;31
+11519105;Strawberry milk, reduced fat;;;1204;Flavored milk, reduced fat;3;1 individual school container;248
+11519105;Strawberry milk, reduced fat;;;1204;Flavored milk, reduced fat;4;Quantity not specified;248
+11519200;Strawberry milk, low fat;;;1206;Flavored milk, lowfat;1;1 cup;248
+11519200;Strawberry milk, low fat;;;1206;Flavored milk, lowfat;2;1 fl oz;31
+11519200;Strawberry milk, low fat;;;1206;Flavored milk, lowfat;3;1 individual school container;248
+11519200;Strawberry milk, low fat;;;1206;Flavored milk, lowfat;4;Quantity not specified;248
+11519205;Strawberry milk, fat free;;;1208;Flavored milk, nonfat;1;1 fl oz;31
+11519205;Strawberry milk, fat free;;;1208;Flavored milk, nonfat;2;1 cup;248
+11519205;Strawberry milk, fat free;;;1208;Flavored milk, nonfat;3;1 individual school container;248
+11519205;Strawberry milk, fat free;;;1208;Flavored milk, nonfat;4;Quantity not specified;248
+11519210;Strawberry milk, reduced sugar;;;1206;Flavored milk, lowfat;1;1 cup;248
+11519210;Strawberry milk, reduced sugar;;;1206;Flavored milk, lowfat;2;1 fl oz;31
+11519210;Strawberry milk, reduced sugar;;;1206;Flavored milk, lowfat;3;1 individual school container;248
+11519210;Strawberry milk, reduced sugar;;;1206;Flavored milk, lowfat;4;Quantity not specified;248
+11519215;Strawberry milk, non-dairy;;;1404;Milk substitutes;1;1 cup;248
+11519215;Strawberry milk, non-dairy;;;1404;Milk substitutes;2;1 fl oz;31
+11519215;Strawberry milk, non-dairy;;;1404;Milk substitutes;3;Quantity not specified;248
+11526000;Milk, malted;;;1204;Flavored milk, reduced fat;1;1 cup;256
+11526000;Milk, malted;;;1204;Flavored milk, reduced fat;2;1 fl oz;32
+11526000;Milk, malted;;;1204;Flavored milk, reduced fat;3;Quantity not specified;256
+11531000;Eggnog;;;1402;Milk shakes and other dairy drinks;1;1 cup;256
+11531000;Eggnog;;;1402;Milk shakes and other dairy drinks;2;1 fl oz;32
+11531000;Eggnog;;;1402;Milk shakes and other dairy drinks;3;Quantity not specified;256
+11541110;Milk shake, home recipe, chocolate;;;1402;Milk shakes and other dairy drinks;1;1 fl oz;28
+11541110;Milk shake, home recipe, chocolate;;;1402;Milk shakes and other dairy drinks;2;1 milkshake (10 fl oz);280
+11541110;Milk shake, home recipe, chocolate;;;1402;Milk shakes and other dairy drinks;3;1 cup;224
+11541110;Milk shake, home recipe, chocolate;;;1402;Milk shakes and other dairy drinks;4;Quantity not specified;280
+11541120;Milk shake, home recipe, flavors other than chocolate;;;1402;Milk shakes and other dairy drinks;1;1 fl oz;28
+11541120;Milk shake, home recipe, flavors other than chocolate;;;1402;Milk shakes and other dairy drinks;2;1 milkshake (10 fl oz);280
+11541120;Milk shake, home recipe, flavors other than chocolate;;;1402;Milk shakes and other dairy drinks;3;1 cup;224
+11541120;Milk shake, home recipe, flavors other than chocolate;;;1402;Milk shakes and other dairy drinks;4;Quantity not specified;280
+11541130;Milk shake, home recipe, chocolate, light;;;1402;Milk shakes and other dairy drinks;1;1 fl oz;28
+11541130;Milk shake, home recipe, chocolate, light;;;1402;Milk shakes and other dairy drinks;2;1 cup;224
+11541130;Milk shake, home recipe, chocolate, light;;;1402;Milk shakes and other dairy drinks;3;Quantity not specified;280
+11541135;Milk shake, home recipe, flavors other than chocolate, light;;;1402;Milk shakes and other dairy drinks;1;1 fl oz;28
+11541135;Milk shake, home recipe, flavors other than chocolate, light;;;1402;Milk shakes and other dairy drinks;2;1 cup;224
+11541135;Milk shake, home recipe, flavors other than chocolate, light;;;1402;Milk shakes and other dairy drinks;3;Quantity not specified;280
+11541400;Milk shake with malt;;;1402;Milk shakes and other dairy drinks;1;1 fl oz;28
+11541400;Milk shake with malt;;;1402;Milk shakes and other dairy drinks;2;1 milkshake (10 fl oz);280
+11541400;Milk shake with malt;;;1402;Milk shakes and other dairy drinks;3;Quantity not specified;280
+11542100;Milk shake, fast food, chocolate;;;1402;Milk shakes and other dairy drinks;2;1 small;405
+11542100;Milk shake, fast food, chocolate;;;1402;Milk shakes and other dairy drinks;3;1 medium;526
+11542100;Milk shake, fast food, chocolate;;;1402;Milk shakes and other dairy drinks;4;1 large;690
+11542100;Milk shake, fast food, chocolate;;;1402;Milk shakes and other dairy drinks;5;1 fl oz;28
+11542100;Milk shake, fast food, chocolate;;;1402;Milk shakes and other dairy drinks;6;1 cup;224
+11542100;Milk shake, fast food, chocolate;;;1402;Milk shakes and other dairy drinks;7;Quantity not specified;405
+11542200;Milk shake, fast food, flavors other than chocolate;;;1402;Milk shakes and other dairy drinks;2;1 small;405
+11542200;Milk shake, fast food, flavors other than chocolate;;;1402;Milk shakes and other dairy drinks;3;1 medium;526
+11542200;Milk shake, fast food, flavors other than chocolate;;;1402;Milk shakes and other dairy drinks;4;1 large;690
+11542200;Milk shake, fast food, flavors other than chocolate;;;1402;Milk shakes and other dairy drinks;5;1 fl oz;28
+11542200;Milk shake, fast food, flavors other than chocolate;;;1402;Milk shakes and other dairy drinks;6;1 cup;224
+11542200;Milk shake, fast food, flavors other than chocolate;;;1402;Milk shakes and other dairy drinks;7;Quantity not specified;405
+11543000;Milk shake, bottled, chocolate;;;1402;Milk shakes and other dairy drinks;1;1 fl oz;31
+11543000;Milk shake, bottled, chocolate;;;1402;Milk shakes and other dairy drinks;2;1 cup;248
+11543000;Milk shake, bottled, chocolate;;;1402;Milk shakes and other dairy drinks;3;1 bottle (12 fl oz);372
+11543000;Milk shake, bottled, chocolate;;;1402;Milk shakes and other dairy drinks;4;Quantity not specified;372
+11543010;Milk shake, bottled, flavors other than chocolate;;;1402;Milk shakes and other dairy drinks;1;1 fl oz;31
+11543010;Milk shake, bottled, flavors other than chocolate;;;1402;Milk shakes and other dairy drinks;2;1 cup;248
+11543010;Milk shake, bottled, flavors other than chocolate;;;1402;Milk shakes and other dairy drinks;3;1 bottle (12 fl oz);372
+11543010;Milk shake, bottled, flavors other than chocolate;;;1402;Milk shakes and other dairy drinks;4;Quantity not specified;372
+11551050;Licuado or Batido;;;7220;Smoothies and grain drinks;1;1 fl oz;27
+11551050;Licuado or Batido;;;7220;Smoothies and grain drinks;2;1 cup;216
+11551050;Licuado or Batido;;;7220;Smoothies and grain drinks;3;Quantity not specified;324
+11553100;Fruit smoothie, NFS;;;7220;Smoothies and grain drinks;1;1 fl oz;27
+11553100;Fruit smoothie, NFS;;;7220;Smoothies and grain drinks;2;1 cup;216
+11553100;Fruit smoothie, NFS;;;7220;Smoothies and grain drinks;4;Quantity not specified;324
+11553100;Fruit smoothie, NFS;;;7220;Smoothies and grain drinks;5;1 small;540
+11553100;Fruit smoothie, NFS;;;7220;Smoothies and grain drinks;6;1 medium;864
+11553100;Fruit smoothie, NFS;;;7220;Smoothies and grain drinks;7;1 large;1080
+11553110;Fruit smoothie, with whole fruit and dairy;;;7220;Smoothies and grain drinks;1;1 fl oz;27
+11553110;Fruit smoothie, with whole fruit and dairy;;;7220;Smoothies and grain drinks;2;1 cup;216
+11553110;Fruit smoothie, with whole fruit and dairy;;;7220;Smoothies and grain drinks;3;1 small;540
+11553110;Fruit smoothie, with whole fruit and dairy;;;7220;Smoothies and grain drinks;4;1 medium;864
+11553110;Fruit smoothie, with whole fruit and dairy;;;7220;Smoothies and grain drinks;5;1 large;1080
+11553110;Fruit smoothie, with whole fruit and dairy;;;7220;Smoothies and grain drinks;6;Quantity not specified;324
+11553120;Fruit smoothie, with whole fruit and dairy, added protein;;;7220;Smoothies and grain drinks;1;1 fl oz;27
+11553120;Fruit smoothie, with whole fruit and dairy, added protein;;;7220;Smoothies and grain drinks;2;1 cup;216
+11553120;Fruit smoothie, with whole fruit and dairy, added protein;;;7220;Smoothies and grain drinks;3;1 small;540
+11553120;Fruit smoothie, with whole fruit and dairy, added protein;;;7220;Smoothies and grain drinks;4;1 medium;864
+11553120;Fruit smoothie, with whole fruit and dairy, added protein;;;7220;Smoothies and grain drinks;5;1 large;1080
+11553120;Fruit smoothie, with whole fruit and dairy, added protein;;;7220;Smoothies and grain drinks;6;Quantity not specified;324
+11553130;Fruit smoothie juice drink, with dairy;;;7220;Smoothies and grain drinks;1;1 fl oz;27
+11553130;Fruit smoothie juice drink, with dairy;;;7220;Smoothies and grain drinks;2;1 cup;216
+11553130;Fruit smoothie juice drink, with dairy;;;7220;Smoothies and grain drinks;3;1 small;540
+11553130;Fruit smoothie juice drink, with dairy;;;7220;Smoothies and grain drinks;4;1 medium;864
+11553130;Fruit smoothie juice drink, with dairy;;;7220;Smoothies and grain drinks;5;1 large;1080
+11553130;Fruit smoothie juice drink, with dairy;;;7220;Smoothies and grain drinks;6;Quantity not specified;324
+11560000;Chocolate milk drink;;;1402;Milk shakes and other dairy drinks;2;1 cup;248
+11560000;Chocolate milk drink;;;1402;Milk shakes and other dairy drinks;3;1 fl oz;31
+11560000;Chocolate milk drink;;;1402;Milk shakes and other dairy drinks;4;Quantity not specified;248
+11710000;Infant formula, NFS;;;9402;Formula, ready-to-feed;1;1 fl oz;30,5
+11710000;Infant formula, NFS;;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11710050;Infant formula, NS as to form (Similac Expert Care Alimentum);;;9402;Formula, ready-to-feed;1;1 fl oz;30,5
+11710050;Infant formula, NS as to form (Similac Expert Care Alimentum);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11710051;Infant formula, ready-to-feed (Similac Expert Care Alimentum);;;9402;Formula, ready-to-feed;1;1 fl oz;30,5
+11710051;Infant formula, ready-to-feed (Similac Expert Care Alimentum);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11710053;Infant formula, powder, made with water, NFS (Similac Expert Care Alimentum);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710053;Infant formula, powder, made with water, NFS (Similac Expert Care Alimentum);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710054;Infant formula, powder, made with tap water (Similac Expert Care Alimentum);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710054;Infant formula, powder, made with tap water (Similac Expert Care Alimentum);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710055;Infant formula, powder, made with plain bottled water (Similac Expert Care Alimentum);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710055;Infant formula, powder, made with plain bottled water (Similac Expert Care Alimentum);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710056;Infant formula, powder, made with baby water (Similac Expert Care Alimentum);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710056;Infant formula, powder, made with baby water (Similac Expert Care Alimentum);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710350;Infant formula, NS as to form (Similac Advance);;;9402;Formula, ready-to-feed;1;1 fl oz;30,4
+11710350;Infant formula, NS as to form (Similac Advance);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11710351;Infant formula, ready-to-feed (Similac Advance);;;9402;Formula, ready-to-feed;1;1 fl oz;30,4
+11710351;Infant formula, ready-to-feed (Similac Advance);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11710352;Infant formula, liquid concentrate, made with water, NFS (Similac Advance);;;9406;Formula, prepared from concentrate;1;1 fl oz;30,4
+11710352;Infant formula, liquid concentrate, made with water, NFS (Similac Advance);;;9406;Formula, prepared from concentrate;2;Quantity not specified;-9
+11710353;Infant formula, powder, made with water, NFS (Similac Advance);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710353;Infant formula, powder, made with water, NFS (Similac Advance);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710354;Infant formula, liquid concentrate, made with tap water (Similac Advance);;;9406;Formula, prepared from concentrate;1;1 fl oz;30,4
+11710354;Infant formula, liquid concentrate, made with tap water (Similac Advance);;;9406;Formula, prepared from concentrate;2;Quantity not specified;-9
+11710355;Infant formula, liquid concentrate, made with plain bottled water (Similac Advance);;;9406;Formula, prepared from concentrate;1;1 fl oz;30,4
+11710355;Infant formula, liquid concentrate, made with plain bottled water (Similac Advance);;;9406;Formula, prepared from concentrate;2;Quantity not specified;-9
+11710356;Infant formula, liquid concentrate, made with baby water (Similac Advance);;;9406;Formula, prepared from concentrate;1;1 fl oz;30,4
+11710356;Infant formula, liquid concentrate, made with baby water (Similac Advance);;;9406;Formula, prepared from concentrate;2;Quantity not specified;-9
+11710357;Infant formula, powder, made with tap water (Similac Advance);;;9404;Formula, prepared from powder;1;1 fl oz;30,4
+11710357;Infant formula, powder, made with tap water (Similac Advance);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710358;Infant formula, powder, made with plain bottled water (Similac Advance);;;9404;Formula, prepared from powder;1;1 fl oz;30,4
+11710358;Infant formula, powder, made with plain bottled water (Similac Advance);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710359;Infant formula, powder, made with baby water (Similac Advance);;;9404;Formula, prepared from powder;1;1 fl oz;30,4
+11710359;Infant formula, powder, made with baby water (Similac Advance);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710360;Infant formula, NS as to form (Similac Advance Organic);;;9402;Formula, ready-to-feed;1;1 fl oz;30,5
+11710360;Infant formula, NS as to form (Similac Advance Organic);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11710361;Infant formula, ready-to-feed (Similac Advance Organic);;;9402;Formula, ready-to-feed;1;1 fl oz;30,5
+11710361;Infant formula, ready-to-feed (Similac Advance Organic);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11710363;Infant formula, powder, made with water, NFS (Similac Advance Organic);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710363;Infant formula, powder, made with water, NFS (Similac Advance Organic);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710367;Infant formula, powder, made with tap water (Similac Advance Organic);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710367;Infant formula, powder, made with tap water (Similac Advance Organic);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710368;Infant formula, powder, made with plain bottled water (Similac Advance Organic);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710368;Infant formula, powder, made with plain bottled water (Similac Advance Organic);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710369;Infant formula, powder, made with baby water (Similac Advance Organic);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710369;Infant formula, powder, made with baby water (Similac Advance Organic);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710370;Infant formula, NS as to form (Similac Sensitive);;;9402;Formula, ready-to-feed;1;1 fl oz;30,4
+11710370;Infant formula, NS as to form (Similac Sensitive);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11710371;Infant formula, ready-to-feed (Similac Sensitive);;;9402;Formula, ready-to-feed;1;1 fl oz;30,4
+11710371;Infant formula, ready-to-feed (Similac Sensitive);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11710372;Infant formula, liquid concentrate, made with water, NFS (Similac Sensitive);;;9406;Formula, prepared from concentrate;1;1 fl oz;30,4
+11710372;Infant formula, liquid concentrate, made with water, NFS (Similac Sensitive);;;9406;Formula, prepared from concentrate;2;Quantity not specified;-9
+11710373;Infant formula, powder, made with water, NFS (Similac Sensitive);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710373;Infant formula, powder, made with water, NFS (Similac Sensitive);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710374;Infant formula, liquid concentrate, made with tap water (Similac Sensitive);;;9406;Formula, prepared from concentrate;1;1 fl oz;30,4
+11710374;Infant formula, liquid concentrate, made with tap water (Similac Sensitive);;;9406;Formula, prepared from concentrate;2;Quantity not specified;-9
+11710375;Infant formula, liquid concentrate, made with plain bottled water (Similac Sensitive);;;9406;Formula, prepared from concentrate;1;1 fl oz;30,4
+11710375;Infant formula, liquid concentrate, made with plain bottled water (Similac Sensitive);;;9406;Formula, prepared from concentrate;2;Quantity not specified;-9
+11710376;Infant formula, liquid concentrate, made with baby water (Similac Sensitive);;;9406;Formula, prepared from concentrate;1;1 fl oz;30,4
+11710376;Infant formula, liquid concentrate, made with baby water (Similac Sensitive);;;9406;Formula, prepared from concentrate;2;Quantity not specified;-9
+11710377;Infant formula, powder, made with tap water (Similac Sensitive);;;9404;Formula, prepared from powder;1;1 fl oz;30,4
+11710377;Infant formula, powder, made with tap water (Similac Sensitive);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710378;Infant formula, powder, made with plain bottled water (Similac Sensitive);;;9404;Formula, prepared from powder;1;1 fl oz;30,4
+11710378;Infant formula, powder, made with plain bottled water (Similac Sensitive);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710379;Infant formula, powder, made with baby water (Similac Sensitive);;;9404;Formula, prepared from powder;1;1 fl oz;30,4
+11710379;Infant formula, powder, made with baby water (Similac Sensitive);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710380;Infant formula, NS as to form (Similac for Spit-Up);;;9402;Formula, ready-to-feed;1;1 fl oz;30,5
+11710380;Infant formula, NS as to form (Similac for Spit-Up);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11710381;Infant formula, ready-to-feed (Similac for Spit-Up);;;9402;Formula, ready-to-feed;1;1 fl oz;30,5
+11710381;Infant formula, ready-to-feed (Similac for Spit-Up);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11710383;Infant formula, powder, made with water, NFS (Similac for Spit-Up);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710383;Infant formula, powder, made with water, NFS (Similac for Spit-Up);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710470;Infant formula, NS as to form (Similac Expert Care NeoSure);;;9402;Formula, ready-to-feed;1;1 fl oz;30,4
+11710470;Infant formula, NS as to form (Similac Expert Care NeoSure);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11710471;Infant formula, ready-to-feed (Similac Expert Care NeoSure);;;9402;Formula, ready-to-feed;1;1 fl oz;30,4
+11710471;Infant formula, ready-to-feed (Similac Expert Care NeoSure);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11710473;Infant formula, powder, made with water, NFS (Similac Expert Care NeoSure);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710473;Infant formula, powder, made with water, NFS (Similac Expert Care NeoSure);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710477;Infant formula, powder, made with tap water (Similac Expert Care NeoSure);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710477;Infant formula, powder, made with tap water (Similac Expert Care NeoSure);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710478;Infant formula, powder, made with plain bottled water (Similac Expert Care NeoSure);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710478;Infant formula, powder, made with plain bottled water (Similac Expert Care NeoSure);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710479;Infant formula, powder, made with baby water (Similac Expert Care NeoSure);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710479;Infant formula, powder, made with baby water (Similac Expert Care NeoSure);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710480;Infant formula, NS as to form (Similac Go and Grow);;;9402;Formula, ready-to-feed;1;1 fl oz;30,4
+11710480;Infant formula, NS as to form (Similac Go and Grow);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11710481;Infant formula, powder, made with water, NFS (Similac Go and Grow);;;9404;Formula, prepared from powder;1;1 fl oz;30,4
+11710481;Infant formula, powder, made with water, NFS (Similac Go and Grow);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710620;Infant formula, NS as to form (Enfamil Newborn);;;9402;Formula, ready-to-feed;1;1 fl oz;30,5
+11710620;Infant formula, NS as to form (Enfamil Newborn);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11710621;Infant formula, ready-to-feed (Enfamil Newborn);;;9402;Formula, ready-to-feed;1;1 fl oz;30,5
+11710621;Infant formula, ready-to-feed (Enfamil Newborn);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11710626;Infant formula, powder, made with water, NFS (Enfamil Newborn);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710626;Infant formula, powder, made with water, NFS (Enfamil Newborn);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710627;Infant formula, powder, made with tap water (Enfamil Newborn);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710627;Infant formula, powder, made with tap water (Enfamil Newborn);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710628;Infant formula, powder, made with plain bottled water (Enfamil Newborn);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710628;Infant formula, powder, made with plain bottled water (Enfamil Newborn);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710629;Infant formula, powder, made with baby water (Enfamil Newborn);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710629;Infant formula, powder, made with baby water (Enfamil Newborn);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710630;Infant formula, NS as to form (Enfamil Infant);;;9402;Formula, ready-to-feed;1;1 fl oz;30,5
+11710630;Infant formula, NS as to form (Enfamil Infant);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11710631;Infant formula, ready-to-feed (Enfamil Infant);;;9402;Formula, ready-to-feed;1;1 fl oz;30,5
+11710631;Infant formula, ready-to-feed (Enfamil Infant);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11710632;Infant formula, liquid concentrate, made with water, NFS (Enfamil Infant);;;9406;Formula, prepared from concentrate;1;1 fl oz;30,5
+11710632;Infant formula, liquid concentrate, made with water, NFS (Enfamil Infant);;;9406;Formula, prepared from concentrate;2;Quantity not specified;-9
+11710633;Infant formula, liquid concentrate, made with tap water (Enfamil Infant);;;9406;Formula, prepared from concentrate;1;1 fl oz;30,5
+11710633;Infant formula, liquid concentrate, made with tap water (Enfamil Infant);;;9406;Formula, prepared from concentrate;2;Quantity not specified;-9
+11710634;Infant formula, liquid concentrate, made with plain bottled water (Enfamil Infant);;;9406;Formula, prepared from concentrate;1;1 fl oz;30,5
+11710634;Infant formula, liquid concentrate, made with plain bottled water (Enfamil Infant);;;9406;Formula, prepared from concentrate;2;Quantity not specified;-9
+11710635;Infant formula, liquid concentrate, made with baby water (Enfamil Infant);;;9406;Formula, prepared from concentrate;1;1 fl oz;30,5
+11710635;Infant formula, liquid concentrate, made with baby water (Enfamil Infant);;;9406;Formula, prepared from concentrate;2;Quantity not specified;-9
+11710636;Infant formula, powder, made with water, NFS (Enfamil Infant);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710636;Infant formula, powder, made with water, NFS (Enfamil Infant);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710637;Infant formula, powder, made with tap water (Enfamil Infant);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710637;Infant formula, powder, made with tap water (Enfamil Infant);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710638;Infant formula, powder, made with plain bottled water (Enfamil Infant);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710638;Infant formula, powder, made with plain bottled water (Enfamil Infant);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710639;Infant formula, powder, made with baby water (Enfamil Infant);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710639;Infant formula, powder, made with baby water (Enfamil Infant);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710660;Infant formula, NS as to form (Enfamil A.R.);;;9402;Formula, ready-to-feed;1;1 fl oz;30,5
+11710660;Infant formula, NS as to form (Enfamil A.R.);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11710661;Infant formula, ready-to-feed (Enfamil A.R.);;;9402;Formula, ready-to-feed;1;1 fl oz;30,5
+11710661;Infant formula, ready-to-feed (Enfamil A.R.);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11710663;Infant formula, powder, made with water, NFS (Enfamil A.R.);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710663;Infant formula, powder, made with water, NFS (Enfamil A.R.);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710664;Infant formula, powder, made with tap water (Enfamil A.R.);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710664;Infant formula, powder, made with tap water (Enfamil A.R.);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710665;Infant formula, NS as to form (Enfamil EnfaCare);;;9402;Formula, ready-to-feed;1;1 fl oz;30,5
+11710665;Infant formula, NS as to form (Enfamil EnfaCare);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11710666;Infant formula, ready-to-feed (Enfamil EnfaCare);;;9402;Formula, ready-to-feed;1;1 fl oz;30,5
+11710666;Infant formula, ready-to-feed (Enfamil EnfaCare);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11710667;Infant formula, powder, made with water, NFS (Enfamil EnfaCare);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710667;Infant formula, powder, made with water, NFS (Enfamil EnfaCare);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710668;Infant formula, powder, made with plain bottled water (Enfamil A.R.);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710668;Infant formula, powder, made with plain bottled water (Enfamil A.R.);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710669;Infant formula, powder, made with baby water (Enfamil A.R.);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710669;Infant formula, powder, made with baby water (Enfamil A.R.);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710670;Infant formula, NS as to form (Enfamil Gentlease);;;9402;Formula, ready-to-feed;1;1 fl oz;30,5
+11710670;Infant formula, NS as to form (Enfamil Gentlease);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11710671;Infant formula, ready-to-feed (Enfamil Gentlease);;;9402;Formula, ready-to-feed;1;1 fl oz;30,5
+11710671;Infant formula, ready-to-feed (Enfamil Gentlease);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11710673;Infant formula, powder, made with water, NFS (Enfamil Gentlease);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710673;Infant formula, powder, made with water, NFS (Enfamil Gentlease);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710674;Infant formula, powder, made with tap water (Enfamil EnfaCare);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710674;Infant formula, powder, made with tap water (Enfamil EnfaCare);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710675;Infant formula, powder, made with plain bottled water (Enfamil EnfaCare);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710675;Infant formula, powder, made with plain bottled water (Enfamil EnfaCare);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710676;Infant formula, powder, made with baby water (Enfamil EnfaCare);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710676;Infant formula, powder, made with baby water (Enfamil EnfaCare);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710677;Infant formula, powder, made with tap water (Enfamil Gentlease);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710677;Infant formula, powder, made with tap water (Enfamil Gentlease);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710678;Infant formula, powder, made with plain bottled water (Enfamil Gentlease);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710678;Infant formula, powder, made with plain bottled water (Enfamil Gentlease);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710679;Infant formula, powder, made with baby water (Enfamil Gentlease);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710679;Infant formula, powder, made with baby water (Enfamil Gentlease);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710680;Infant formula, NS as to form (Enfamil Enfagrow Toddler Transitions);;;9402;Formula, ready-to-feed;1;1 fl oz;30,5
+11710680;Infant formula, NS as to form (Enfamil Enfagrow Toddler Transitions);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11710681;Infant formula, ready-to-feed (Enfamil Enfragrow Toddler Transitions);;;9402;Formula, ready-to-feed;1;1 fl oz;30,5
+11710681;Infant formula, ready-to-feed (Enfamil Enfragrow Toddler Transitions);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11710683;Infant formula, powder, made with water, NFS (Enfamil Enfragrow Toddler Transitions);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710683;Infant formula, powder, made with water, NFS (Enfamil Enfragrow Toddler Transitions);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710687;Infant formula, powder, made with tap water (Enfamil Enfagrow Toddler Transitions);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710687;Infant formula, powder, made with tap water (Enfamil Enfagrow Toddler Transitions);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710688;Infant formula, powder, made with plain bottled water (Enfamil Enfagrow Toddler Transitions);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710688;Infant formula, powder, made with plain bottled water (Enfamil Enfagrow Toddler Transitions);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710689;Infant formula, powder, made with baby water (Enfamil Enfagrow Toddler Transitions);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710689;Infant formula, powder, made with baby water (Enfamil Enfagrow Toddler Transitions);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710690;Infant formula, NS as to form (Enfamil Enfagrow Toddler Transitions Gentlease);;;9402;Formula, ready-to-feed;1;1 fl oz;30,5
+11710690;Infant formula, NS as to form (Enfamil Enfagrow Toddler Transitions Gentlease);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11710693;Infant formula, powder, made with water, NFS (Enfamil Enfagrow Toddler Transitions Gentlease);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710693;Infant formula, powder, made with water, NFS (Enfamil Enfagrow Toddler Transitions Gentlease);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710697;Infant formula, powder, made with tap water (Enfamil Enfagrow Toddler Transitions Gentlease);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710697;Infant formula, powder, made with tap water (Enfamil Enfagrow Toddler Transitions Gentlease);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710698;Infant formula, powder, made with plain bottled water (Enfamil Enfagrow Toddler Transitions Gentlease);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710698;Infant formula, powder, made with plain bottled water (Enfamil Enfagrow Toddler Transitions Gentlease);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710699;Infant formula, powder, made with baby water (Enfamil Enfagrow Toddler Transitions Gentlease);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710699;Infant formula, powder, made with baby water (Enfamil Enfagrow Toddler Transitions Gentlease);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710800;Infant formula, NS as to form (PediaSure);;;9402;Formula, ready-to-feed;1;1 fl oz;31
+11710800;Infant formula, NS as to form (PediaSure);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11710801;Infant formula, ready-to-feed (PediaSure);;;9402;Formula, ready-to-feed;1;1 fl oz;31
+11710801;Infant formula, ready-to-feed (PediaSure);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11710801;Infant formula, ready-to-feed (PediaSure);;;9402;Formula, ready-to-feed;3;1 can (8 fl oz);248
+11710805;Infant formula, with fiber, NS as to form (PediaSure Fiber);;;9402;Formula, ready-to-feed;1;1 fl oz;31
+11710805;Infant formula, with fiber, NS as to form (PediaSure Fiber);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11710806;Infant formula, with fiber, ready-to-feed (PediaSure Fiber);;;9402;Formula, ready-to-feed;1;1 fl oz;31
+11710806;Infant formula, with fiber, ready-to-feed (PediaSure Fiber);;;9402;Formula, ready-to-feed;2;1 can (8 fl oz);248
+11710806;Infant formula, with fiber, ready-to-feed (PediaSure Fiber);;;9402;Formula, ready-to-feed;3;Quantity not specified;-9
+11710910;Infant formula, NS as to form (Gerber Good Start Gentle);;;9402;Formula, ready-to-feed;1;1 fl oz;30,5
+11710910;Infant formula, NS as to form (Gerber Good Start Gentle);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11710911;Infant formula, ready-to-feed (Gerber Good Start Gentle);;;9402;Formula, ready-to-feed;1;1 fl oz;30,5
+11710911;Infant formula, ready-to-feed (Gerber Good Start Gentle);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11710912;Infant formula, liquid concentrate, made with water, NFS (Gerber Good Start Gentle);;;9406;Formula, prepared from concentrate;1;1 fl oz;30,5
+11710912;Infant formula, liquid concentrate, made with water, NFS (Gerber Good Start Gentle);;;9406;Formula, prepared from concentrate;2;Quantity not specified;-9
+11710913;Infant formula, powder, made with water, NFS (Gerber Good Start Gentle);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710913;Infant formula, powder, made with water, NFS (Gerber Good Start Gentle);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710914;Infant formula, liquid concentrate, made with tap water (Gerber Good Start Gentle);;;9406;Formula, prepared from concentrate;1;1 fl oz;30,5
+11710914;Infant formula, liquid concentrate, made with tap water (Gerber Good Start Gentle);;;9406;Formula, prepared from concentrate;2;Quantity not specified;-9
+11710915;Infant formula, liquid concentrate, made with plain bottled water (Gerber Good Start Gentle);;;9406;Formula, prepared from concentrate;1;1 fl oz;30,5
+11710915;Infant formula, liquid concentrate, made with plain bottled water (Gerber Good Start Gentle);;;9406;Formula, prepared from concentrate;2;Quantity not specified;-9
+11710916;Infant formula, liquid concentrate, made with baby water (Gerber Good Start Gentle);;;9406;Formula, prepared from concentrate;1;1 fl oz;30,5
+11710916;Infant formula, liquid concentrate, made with baby water (Gerber Good Start Gentle);;;9406;Formula, prepared from concentrate;2;Quantity not specified;-9
+11710917;Infant formula, powder, made with tap water (Gerber Good Start Gentle);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710917;Infant formula, powder, made with tap water (Gerber Good Start Gentle);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710918;Infant formula, powder, made with plain bottled water (Gerber Good Start Gentle);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710918;Infant formula, powder, made with plain bottled water (Gerber Good Start Gentle);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710919;Infant formula, powder, made with baby water (Gerber Good Start Gentle);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710919;Infant formula, powder, made with baby water (Gerber Good Start Gentle);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710920;Infant formula, NS as to form (Gerber Good Start Protect);;;9402;Formula, ready-to-feed;1;1 fl oz;30,5
+11710920;Infant formula, NS as to form (Gerber Good Start Protect);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11710923;Infant formula, powder, made with water, NFS (Gerber Good Start Protect);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710923;Infant formula, powder, made with water, NFS (Gerber Good Start Protect);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710927;Infant formula, powder, made with tap water (Gerber Good Start Protect);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710927;Infant formula, powder, made with tap water (Gerber Good Start Protect);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710928;Infant formula, powder, made with plain bottled water (Gerber Good Start Protect);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710928;Infant formula, powder, made with plain bottled water (Gerber Good Start Protect);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710929;Infant formula, powder, made with baby water (Gerber Good Start Protect);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710929;Infant formula, powder, made with baby water (Gerber Good Start Protect);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710930;Infant formula, NS as to form (Gerber Graduates Gentle);;;9402;Formula, ready-to-feed;1;1 fl oz;30,5
+11710930;Infant formula, NS as to form (Gerber Graduates Gentle);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11710940;Infant formula, NS as to form (Gerber Graduates Protect);;;9402;Formula, ready-to-feed;1;1 fl oz;30,5
+11710940;Infant formula, NS as to form (Gerber Graduates Protect);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11710960;Infant formula, NS as to form (Store Brand);;;9402;Formula, ready-to-feed;1;1 fl oz;30,5
+11710960;Infant formula, NS as to form (Store Brand);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11710961;Infant formula, liquid concentrate, made with water, NFS (Store Brand);;;9406;Formula, prepared from concentrate;1;1 fl oz;30,5
+11710961;Infant formula, liquid concentrate, made with water, NFS (Store Brand);;;9406;Formula, prepared from concentrate;2;Quantity not specified;-9
+11710962;Infant formula, powder, made with water, NFS (Store Brand);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710962;Infant formula, powder, made with water, NFS (Store Brand);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710963;Infant formula, ready-to-feed (Store Brand);;;9402;Formula, ready-to-feed;1;1 fl oz;30,5
+11710963;Infant formula, ready-to-feed (Store Brand);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11710964;Infant formula, liquid concentrate, made with tap water (Store Brand);;;9406;Formula, prepared from concentrate;1;1 fl oz;30,5
+11710964;Infant formula, liquid concentrate, made with tap water (Store Brand);;;9406;Formula, prepared from concentrate;2;Quantity not specified;-9
+11710965;Infant formula, liquid concentrate, made with plain bottled water (Store Brand);;;9406;Formula, prepared from concentrate;1;1 fl oz;30,5
+11710965;Infant formula, liquid concentrate, made with plain bottled water (Store Brand);;;9406;Formula, prepared from concentrate;2;Quantity not specified;-9
+11710966;Infant formula, liquid concentrate, made with baby water (Store Brand);;;9406;Formula, prepared from concentrate;1;1 fl oz;30,5
+11710966;Infant formula, liquid concentrate, made with baby water (Store Brand);;;9406;Formula, prepared from concentrate;2;Quantity not specified;-9
+11710967;Infant formula, powder, made with tap water (Store Brand);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710967;Infant formula, powder, made with tap water (Store Brand);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710968;Infant formula, powder, made with plain bottled water (Store Brand);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710968;Infant formula, powder, made with plain bottled water (Store Brand);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11710969;Infant formula, powder, made with baby water (Store Brand);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11710969;Infant formula, powder, made with baby water (Store Brand);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11720310;Infant formula, NS as to form (Enfamil ProSobee);;;9402;Formula, ready-to-feed;1;1 fl oz;30,5
+11720310;Infant formula, NS as to form (Enfamil ProSobee);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11720311;Infant formula, ready-to-feed (Enfamil ProSobee);;;9402;Formula, ready-to-feed;1;1 fl oz;30,5
+11720311;Infant formula, ready-to-feed (Enfamil ProSobee);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11720312;Infant formula, liquid concentrate, made with water, NFS (Enfamil ProSobee);;;9406;Formula, prepared from concentrate;1;1 fl oz;30,5
+11720312;Infant formula, liquid concentrate, made with water, NFS (Enfamil ProSobee);;;9406;Formula, prepared from concentrate;2;Quantity not specified;-9
+11720313;Infant formula, powder, made with water, NFS (Enfamil ProSobee);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11720313;Infant formula, powder, made with water, NFS (Enfamil ProSobee);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11720314;Infant formula, liquid concentrate, made with tap water (Enfamil ProSobee);;;9406;Formula, prepared from concentrate;1;1 fl oz;30,5
+11720314;Infant formula, liquid concentrate, made with tap water (Enfamil ProSobee);;;9406;Formula, prepared from concentrate;2;Quantity not specified;-9
+11720315;Infant formula, liquid concentrate, made with plain bottled water (Enfamil ProSobee);;;9406;Formula, prepared from concentrate;1;1 fl oz;30,5
+11720315;Infant formula, liquid concentrate, made with plain bottled water (Enfamil ProSobee);;;9406;Formula, prepared from concentrate;2;Quantity not specified;-9
+11720316;Infant formula, liquid concentrate, made with baby water (Enfamil ProSobee);;;9406;Formula, prepared from concentrate;1;1 fl oz;30,5
+11720316;Infant formula, liquid concentrate, made with baby water (Enfamil ProSobee);;;9406;Formula, prepared from concentrate;2;Quantity not specified;-9
+11720317;Infant formula, powder, made with tap water (Enfamil ProSobee);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11720317;Infant formula, powder, made with tap water (Enfamil ProSobee);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11720318;Infant formula, powder, made with plain bottled water (Enfamil ProSobee);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11720318;Infant formula, powder, made with plain bottled water (Enfamil ProSobee);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11720319;Infant formula, powder, made with baby water (Enfamil ProSobee);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11720319;Infant formula, powder, made with baby water (Enfamil ProSobee);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11720320;Infant formula, NS as to form (Enfamil Enfagrow Toddler Transitions Soy);;;9402;Formula, ready-to-feed;1;1 fl oz;30,5
+11720320;Infant formula, NS as to form (Enfamil Enfagrow Toddler Transitions Soy);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11720323;Infant formula, powder, made with water, NFS (Enfamil Enfagrow Toddler Transitions Soy);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11720323;Infant formula, powder, made with water, NFS (Enfamil Enfagrow Toddler Transitions Soy);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11720410;Infant formula, NS as to form (Similac Isomil Soy);;;9402;Formula, ready-to-feed;1;1 fl oz;30,5
+11720410;Infant formula, NS as to form (Similac Isomil Soy);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11720411;Infant formula, ready-to-feed (Similac Isomil Soy);;;9402;Formula, ready-to-feed;1;1 fl oz;30,5
+11720411;Infant formula, ready-to-feed (Similac Isomil Soy);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11720412;Infant formula, liquid concentrate, made with water, NFS (Similac Isomil Soy);;;9406;Formula, prepared from concentrate;1;1 fl oz;30,5
+11720412;Infant formula, liquid concentrate, made with water, NFS (Similac Isomil Soy);;;9406;Formula, prepared from concentrate;2;Quantity not specified;-9
+11720413;Infant formula, powder, made with water, NFS (Similac Isomil Soy);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11720413;Infant formula, powder, made with water, NFS (Similac Isomil Soy);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11720414;Infant formula, liquid concentrate, made with tap water (Similac Isomil Soy);;;9406;Formula, prepared from concentrate;1;1 fl oz;30,5
+11720414;Infant formula, liquid concentrate, made with tap water (Similac Isomil Soy);;;9406;Formula, prepared from concentrate;2;Quantity not specified;-9
+11720415;Infant formula, liquid concentrate, made with plain bottled water (Similac Isomil Soy);;;9406;Formula, prepared from concentrate;1;1 fl oz;30,5
+11720415;Infant formula, liquid concentrate, made with plain bottled water (Similac Isomil Soy);;;9406;Formula, prepared from concentrate;2;Quantity not specified;-9
+11720416;Infant formula, liquid concentrate, made with baby water (Similac Isomil Soy);;;9406;Formula, prepared from concentrate;1;1 fl oz;30,5
+11720416;Infant formula, liquid concentrate, made with baby water (Similac Isomil Soy);;;9406;Formula, prepared from concentrate;2;Quantity not specified;-9
+11720417;Infant formula, powder, made with tap water (Similac Isomil Soy);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11720417;Infant formula, powder, made with tap water (Similac Isomil Soy);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11720418;Infant formula, powder, made with plain bottled water (Similac Isomil Soy);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11720418;Infant formula, powder, made with plain bottled water (Similac Isomil Soy);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11720419;Infant formula, powder, made with baby water (Similac Isomil Soy);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11720419;Infant formula, powder, made with baby water (Similac Isomil Soy);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11720430;Infant formula, NS as to form (Similac Expert Care for Diarrhea);;;9402;Formula, ready-to-feed;1;1 fl oz;30,5
+11720430;Infant formula, NS as to form (Similac Expert Care for Diarrhea);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11720431;Infant formula, ready-to-feed (Similac Expert Care for Diarrhea);;;9402;Formula, ready-to-feed;1;1 fl oz;30,5
+11720431;Infant formula, ready-to-feed (Similac Expert Care for Diarrhea);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11720610;Infant formula, NS as to form (Gerber Good Start Soy);;;9402;Formula, ready-to-feed;1;1 fl oz;30,5
+11720610;Infant formula, NS as to form (Gerber Good Start Soy);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11720611;Infant formula, ready-to-feed (Gerber Good Start Soy);;;9402;Formula, ready-to-feed;1;1 fl oz;30,5
+11720611;Infant formula, ready-to-feed (Gerber Good Start Soy);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11720612;Infant formula, liquid concentrate, made with water, NFS (Gerber Good Start Soy);;;9406;Formula, prepared from concentrate;1;1 fl oz;30,5
+11720612;Infant formula, liquid concentrate, made with water, NFS (Gerber Good Start Soy);;;9406;Formula, prepared from concentrate;2;Quantity not specified;-9
+11720613;Infant formula, powder, made with water, NFS (Gerber Good Start Soy);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11720613;Infant formula, powder, made with water, NFS (Gerber Good Start Soy);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11720614;Infant formula, liquid concentrate, made with tap water (Gerber Good Start Soy);;;9406;Formula, prepared from concentrate;1;1 fl oz;30,5
+11720614;Infant formula, liquid concentrate, made with tap water (Gerber Good Start Soy);;;9406;Formula, prepared from concentrate;2;Quantity not specified;-9
+11720615;Infant formula, liquid concentrate, made with plain bottled water (Gerber Good Start Soy);;;9406;Formula, prepared from concentrate;1;1 fl oz;30,5
+11720615;Infant formula, liquid concentrate, made with plain bottled water (Gerber Good Start Soy);;;9406;Formula, prepared from concentrate;2;Quantity not specified;-9
+11720616;Infant formula, liquid concentrate, made with baby water (Gerber Good Start Soy);;;9406;Formula, prepared from concentrate;1;1 fl oz;30,5
+11720616;Infant formula, liquid concentrate, made with baby water (Gerber Good Start Soy);;;9406;Formula, prepared from concentrate;2;Quantity not specified;-9
+11720617;Infant formula, powder, made with tap water (Gerber Good Start Soy);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11720617;Infant formula, powder, made with tap water (Gerber Good Start Soy);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11720618;Infant formula, powder, made with plain bottled water (Gerber Good Start Soy);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11720618;Infant formula, powder, made with plain bottled water (Gerber Good Start Soy);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11720619;Infant formula, powder, made with baby water (Gerber Good Start Soy);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11720619;Infant formula, powder, made with baby water (Gerber Good Start Soy);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11720620;Infant formula, NS as to form (Gerber Graduates Soy);;;9402;Formula, ready-to-feed;1;1 fl oz;30,5
+11720620;Infant formula, NS as to form (Gerber Graduates Soy);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11720800;Infant formula, NS as to form (Store Brand Soy);;;9402;Formula, ready-to-feed;1;1 fl oz;30,5
+11720800;Infant formula, NS as to form (Store Brand Soy);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11720801;Infant formula, ready-to-feed (Store brand Soy);;;9402;Formula, ready-to-feed;1;1 fl oz;30,5
+11720801;Infant formula, ready-to-feed (Store brand Soy);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11720802;Infant formula, liquid concentrate, made with water, NFS (Store Brand Soy);;;9406;Formula, prepared from concentrate;1;1 fl oz;30,5
+11720802;Infant formula, liquid concentrate, made with water, NFS (Store Brand Soy);;;9406;Formula, prepared from concentrate;2;Quantity not specified;-9
+11720803;Infant formula, powder, made with water, NFS (Store Brand Soy);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11720803;Infant formula, powder, made with water, NFS (Store Brand Soy);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11720807;Infant formula, powder, made with tap water (Store Brand Soy);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11720807;Infant formula, powder, made with tap water (Store Brand Soy);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11720808;Infant formula, powder, made with plain bottled water (Store Brand Soy);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11720808;Infant formula, powder, made with plain bottled water (Store Brand Soy);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11720809;Infant formula, powder, made with baby water (Store Brand Soy);;;9404;Formula, prepared from powder;1;1 fl oz;30,5
+11720809;Infant formula, powder, made with baby water (Store Brand Soy);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11740310;Infant formula, NS as to form (Enfamil Nutramigen);;;9402;Formula, ready-to-feed;1;1 fl oz;30,8
+11740310;Infant formula, NS as to form (Enfamil Nutramigen);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11740311;Infant formula, ready-to-feed (Enfamil Nutramigen);;;9402;Formula, ready-to-feed;1;1 fl oz;30,8
+11740311;Infant formula, ready-to-feed (Enfamil Nutramigen);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11740312;Infant formula, liquid concentrate, made with water, NFS (Enfamil Nutramigen);;;9406;Formula, prepared from concentrate;1;1 fl oz;30,8
+11740312;Infant formula, liquid concentrate, made with water, NFS (Enfamil Nutramigen);;;9406;Formula, prepared from concentrate;2;Quantity not specified;-9
+11740313;Infant formula, powder, made with water, NFS (Enfamil Nutramigen);;;9404;Formula, prepared from powder;1;1 fl oz;30,8
+11740313;Infant formula, powder, made with water, NFS (Enfamil Nutramigen);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11740320;Infant formula, NS as to form (PurAmino);;;9402;Formula, ready-to-feed;1;1 fl oz;30,8
+11740320;Infant formula, NS as to form (PurAmino);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11740323;Infant formula, powder, made with water, NFS (PurAmino);;;9404;Formula, prepared from powder;1;1 fl oz;30,8
+11740323;Infant formula, powder, made with water, NFS (PurAmino);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11740400;Infant formula, NS as to form (Enfamil Pregestimil);;;9402;Formula, ready-to-feed;1;1 fl oz;30,8
+11740400;Infant formula, NS as to form (Enfamil Pregestimil);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11740401;Infant formula, ready-to-feed (Enfamil Pregestimil);;;9402;Formula, ready-to-feed;1;1 fl oz;30,8
+11740401;Infant formula, ready-to-feed (Enfamil Pregestimil);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11740403;Infant formula, powder, made with water, NFS (Enfamil Pregestimil);;;9404;Formula, prepared from powder;1;1 fl oz;30,8
+11740403;Infant formula, powder, made with water, NFS (Enfamil Pregestimil);;;9404;Formula, prepared from powder;2;Quantity not specified;-9
+11740511;Infant formula, ready-to-feed, low iron (Enfamil Premature 20 Cal);;;9402;Formula, ready-to-feed;1;1 fl oz;30,5
+11740511;Infant formula, ready-to-feed, low iron (Enfamil Premature 20 Cal);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11740521;Infant formula, ready-to-feed, with iron (Enfamil Premature 20 Cal);;;9402;Formula, ready-to-feed;1;1 fl oz;30,5
+11740521;Infant formula, ready-to-feed, with iron (Enfamil Premature 20 Cal);;;9402;Formula, ready-to-feed;2;Quantity not specified;-9
+11810000;Milk, dry, not reconstituted, NS as to fat content;;;9999;Not included in a food category;1;1 cup;128
+11810000;Milk, dry, not reconstituted, NS as to fat content;;;9999;Not included in a food category;2;Quantity not specified;43
+11811000;Milk, dry, not reconstituted, whole;;;9999;Not included in a food category;1;1 cup;128
+11811000;Milk, dry, not reconstituted, whole;;;9999;Not included in a food category;2;Quantity not specified;43
+11812000;Milk, dry, not reconstituted, low fat (1%);;;9999;Not included in a food category;1;1 cup;120
+11812000;Milk, dry, not reconstituted, low fat (1%);;;9999;Not included in a food category;2;Quantity not specified;40
+11813000;Milk, dry, not reconstituted, fat free (skim);;;9999;Not included in a food category;1;1 cup;68
+11813000;Milk, dry, not reconstituted, fat free (skim);;;9999;Not included in a food category;2;1 envelope (1-1/3 cup);91
+11813000;Milk, dry, not reconstituted, fat free (skim);;;9999;Not included in a food category;3;1/3 cup (makes 1 cup reconstituted milk);23
+11813000;Milk, dry, not reconstituted, fat free (skim);;;9999;Not included in a food category;4;Quantity not specified;23
+11825000;Whey, sweet, dry;;;9999;Not included in a food category;2;Quantity not specified;8
+11825000;Whey, sweet, dry;;;9999;Not included in a food category;3;1 tablespoon;7,5
+11830150;Cocoa powder, not reconstituted;;;9999;Not included in a food category;1;1 tablespoon;5
+11830150;Cocoa powder, not reconstituted;;;9999;Not included in a food category;2;Quantity not specified;5
+11830150;Cocoa powder, not reconstituted;;;9999;Not included in a food category;3;Guideline amount per fl oz of beverage;0,6
+11830160;Chocolate beverage powder, dry mix, not reconstituted;;;9999;Not included in a food category;1;1 tablespoon;10
+11830160;Chocolate beverage powder, dry mix, not reconstituted;;;9999;Not included in a food category;2;Quantity not specified;20
+11830160;Chocolate beverage powder, dry mix, not reconstituted;;;9999;Not included in a food category;3;Guideline amount per fl oz of beverage;2,5
+11830165;Chocolate beverage powder, light, dry mix, not reconstituted;;;9999;Not included in a food category;1;1 tablespoon;10
+11830165;Chocolate beverage powder, light, dry mix, not reconstituted;;;9999;Not included in a food category;2;Quantity not specified;20
+11830165;Chocolate beverage powder, light, dry mix, not reconstituted;;;9999;Not included in a food category;3;Guideline amount per fl oz of beverage;2,5
+11830260;Milk, malted, dry mix, not reconstituted;;;9999;Not included in a food category;1;1 tablespoon;5,5
+11830260;Milk, malted, dry mix, not reconstituted;;;9999;Not included in a food category;2;Quantity not specified;11
+11830260;Milk, malted, dry mix, not reconstituted;;;9999;Not included in a food category;3;Guideline amount per fl oz of beverage;1,4
+11830400;Strawberry beverage powder, dry mix, not reconstituted;;;9999;Not included in a food category;1;1 tablespoon;10
+11830400;Strawberry beverage powder, dry mix, not reconstituted;;;9999;Not included in a food category;2;Quantity not specified;20
+11830400;Strawberry beverage powder, dry mix, not reconstituted;;;9999;Not included in a food category;3;Guideline amount per fl oz of beverage;2,5
+12100100;Cream, NS as to light, heavy, or half and half;;;8008;Cream and cream substitutes;1;1 cup;240
+12100100;Cream, NS as to light, heavy, or half and half;;;8008;Cream and cream substitutes;2;1 fl oz;30
+12100100;Cream, NS as to light, heavy, or half and half;;;8008;Cream and cream substitutes;3;1 individual container;11
+12100100;Cream, NS as to light, heavy, or half and half;;;8008;Cream and cream substitutes;4;Guideline amount per fl oz of beverage;2,5
+12100100;Cream, NS as to light, heavy, or half and half;;;8008;Cream and cream substitutes;5;Quantity not specified;20
+12110100;Cream, light;;;8008;Cream and cream substitutes;1;1 cup;240
+12110100;Cream, light;;;8008;Cream and cream substitutes;2;1 fl oz;30
+12110100;Cream, light;;;8008;Cream and cream substitutes;3;1 individual container;11
+12110100;Cream, light;;;8008;Cream and cream substitutes;4;Guideline amount per fl oz of beverage;2,5
+12110100;Cream, light;;;8008;Cream and cream substitutes;5;Quantity not specified;20
+12120100;Cream, half and half;;;8008;Cream and cream substitutes;1;1 cup;240
+12120100;Cream, half and half;;;8008;Cream and cream substitutes;2;1 fl oz;30
+12120100;Cream, half and half;;;8008;Cream and cream substitutes;3;1 individual container (.5 fl oz);15
+12120100;Cream, half and half;;;8008;Cream and cream substitutes;4;Guideline amount per fl oz of beverage;2,5
+12120100;Cream, half and half;;;8008;Cream and cream substitutes;5;Quantity not specified;20
+12120106;Cream, half and half, flavored;;;8008;Cream and cream substitutes;1;1 cup;240
+12120106;Cream, half and half, flavored;;;8008;Cream and cream substitutes;2;1 fl oz;30
+12120106;Cream, half and half, flavored;;;8008;Cream and cream substitutes;3;1 individual container (.5 fl oz);15
+12120106;Cream, half and half, flavored;;;8008;Cream and cream substitutes;4;Guideline amount per fl oz of beverage;2,5
+12120106;Cream, half and half, flavored;;;8008;Cream and cream substitutes;5;Quantity not specified;30
+12120110;Cream, half and half, fat free;;;8008;Cream and cream substitutes;1;1 cup;240
+12120110;Cream, half and half, fat free;;;8008;Cream and cream substitutes;2;1 fl oz;30
+12120110;Cream, half and half, fat free;;;8008;Cream and cream substitutes;3;Guideline amount per fl oz of beverage;2,5
+12120110;Cream, half and half, fat free;;;8008;Cream and cream substitutes;4;Quantity not specified;30
+12130100;Cream, heavy;;;8008;Cream and cream substitutes;1;1 cup;240
+12130100;Cream, heavy;;;8008;Cream and cream substitutes;2;1 fl oz;30
+12130100;Cream, heavy;;;8008;Cream and cream substitutes;3;Guideline amount per fl oz of beverage;2,5
+12130100;Cream, heavy;;;8008;Cream and cream substitutes;4;Quantity not specified;20
