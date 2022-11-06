@@ -1,9 +1,38 @@
 import scala.io.Source
 import scala.util.{Random, Using, Try, Success, Failure}
 
+import akka.actor.typed.Scheduler
+import akka.actor.typed.ActorSystem
+import akka.actor.typed.{ActorRef, Behavior}
+import akka.actor.typed.scaladsl.Behaviors
+import akka.util.Timeout
+
+import scala.concurrent.ExecutionContext
+import scala.concurrent.duration.DurationInt
+
 object Main {
-  def main(args: Array[String]): Unit =
+  def main(args: Array[String]): Unit = {
+    // Init coq
+    val coqActor = ActorSystem(coq, "coq")
+    ActorSystem.apply(coq, "coq")
+
+    // Print all menus available 
+    println("Choices:") 
+    println(" [1]: Menu composed by 3 healthy ingredients")
+    println(" [2]: Menu composed by 1 proteined ingredient and 2 others ingredients")
+    println(" [3]: Menu composed by 1 balanced ingredient (25% proteins - 40% glucids - 35% lipids)")
+    println(" [4]: Menu composed by 3 random ingredients")
+
     while (true) {
+      Thread.sleep(1000) // Let Coq initiate the process for a menu before asking for new menu 
+      val input = scala.io.StdIn.readLine("What menu do you want ?")
+      coqActor ! Answer(input) // [1] Ask a menu to the Coq
+    }
+  }
+
+
+
+/*
       GastroExtractor.extract("./products.csv") match {
       case Success(products) => runCli(products)
       case Failure(error) => {
@@ -26,8 +55,156 @@ object Main {
       val input = scala.io.StdIn.readLine("What menu do you want ?")
       MenuComposer(products, input.toString).compose
     }
+  }*/
+
+
+  // ACTORS
+  // Coq
+  val coq: Behavior[Answer] = Behaviors.setup { context =>
+    import akka.actor.typed.scaladsl.AskPattern._
+    implicit val ec: ExecutionContext = scala.concurrent.ExecutionContext.global
+
+    val intendant = context.spawn(intendantActor, "StatelessActorDoingThings")
+
+    implicit val timeout: Timeout = Timeout(3.seconds)
+    implicit val scheduler: Scheduler = context.system.scheduler
+
+    // [1] Behaviour when receiving an order from client 
+    Behaviors.receiveMessage { order => 
+      val menu_type = order.message
+      println(f"Order receiveid for menu $menu_type. Your menu will be ready soon.")
+      
+      // [2] Ask main product to Intendant
+      intendant.ask(x => Question("main product", x))
+      intendant ? (Question("main product", _)) onComplete {
+        // Intendant gived a product to start the menu : Coq can continue
+        case Success(Answer(Some(value))) => {
+          val main_product = value
+          println(main_product)
+        }
+
+        // Problem during product extraction by the Intendant : Coq must stop this menu
+        case Success(Answer(None)) => println("Please retry with correct products.csv file.")
+        case Failure(exception) => println(f"A failure occured: $exception")
+      }
+      Behaviors.same
+    }
   }
+
+  // Intendant
+  val intendantActor: Behavior[Question] = Behaviors.receive { (_, message) =>
+    {
+      /* Select a product randomly in the products.csv file */
+      def selectProduct(): Option[Product] = {
+        GastroExtractor.extract("./products.csv") match {
+          // Extraction OK -> Select 1 random product and put it in Some
+          case Right(products) => Some(products(Random.between(0, products.length)))
+          
+          // Extraction KO -> Print error and return None
+          case Left(error) => {
+            println(f"AH ! Something wrong happened while extracting products from the file : $error")
+            None
+          }
+        }
+      }
+
+      message match {
+        // [2] Behaviour when Coq ask a main product
+        case Question("main product", sender) =>
+          val product = selectProduct()
+          sender ! Answer(product)
+          Behaviors.same
+      }
+    }
+  }
+
+  // ProteinDispenser
+  val proteinDispenser: Behavior[Question] = Behaviors.receive { (_, message) =>
+    {
+      /* Returns a list of <howMany> products where the amount of protein is more than <min_protein> */
+      def selectProteinedProducts(howMany: Int, min_protein: Float): Option[List[Product]] = {
+        GastroExtractor.extract("./products.csv") match {
+          // Extraction OK -> Select random proteined products and put it in Some
+          case Right(products) => {
+            products.filter(p=>(p.protein > min_protein))
+            // FILTER FUNCTION
+            val protein = products.filter(p=>(p.protein > min_protein))
+            // Chooses <howMany> random proteined products in this list
+            val selected = for { _ <- List.range(0, howMany) } yield protein(Random.between(0, protein.length))
+            Some(selected)
+          }
+
+          // Extraction KO -> Print error and return None
+          case Left(error) => {
+            println(f"AH ! Something wrong happened while extracting proteined products from the file : $error")
+            None
+          }
+        }
+      }
+
+      message match {
+        // [3] Behavior when Coq ask proteined products
+        case Question(_, sender) =>
+          val products = selectProteinedProducts(1,20)
+          sender ! Answer(products)
+          Behaviors.same
+      }
+    }
+  }
+
+  // FatDispenser
+val fatDispenser: Behavior[Question] = Behaviors.receive { (_, message) =>
+    {
+      /* Returns a list of <howMany> products where the amount of fat is more than <min_fat> */
+      def selectFatProducts(howMany: Int, min_fat: Float): Option[List[Product]] = {
+        GastroExtractor.extract("./products.csv") match {
+          // Extraction OK -> Select random dat products and put it in Some
+          case Right(products) => {
+            products.filter(p=>(p.fat > min_fat))
+            // FILTER FUNCTION
+            val fat = products.filter(p=>(p.fat > min_fat))
+            // Chooses <howMany> random fat products in this list
+            val selected = for { _ <- List.range(0, howMany) } yield fat(Random.between(0, fat.length))
+            Some(selected)
+          }
+
+          // Extraction KO -> Print error and return None
+          case Left(error) => {
+            println(f"AH ! Something wrong happened while extracting fat products from the file : $error")
+            None
+          }
+        }
+      }
+
+      message match {
+        // [3] Behavior when Coq ask fat products
+        case Question(_, sender) =>
+          val products = selectFatProducts(1,20)
+          sender ! Answer(products)
+          Behaviors.same
+      }
+    }
+  }
+
+  // SugarDispenser
+  val sugarDispenser: Behavior[Question] = Behaviors.receive { (_, message) =>
+    {
+      def doSomething(): Unit = println(f"doing something...")
+
+      message match {
+        case Question(_, sender) =>
+          doSomething()
+          sender ! Answer("Done")
+          Behaviors.same
+      }
+    }
+  }
+
 }
+
+sealed trait Communication
+case class Question(message: String, sender: ActorRef[Answer]) extends Communication
+case class Answer(message: Any) extends Communication
 
 // TRAIT, CASE CLASSES AND HIERARCHY
 /* Each menu has a list of products and a method show used to print 
@@ -35,19 +212,11 @@ object Main {
 trait Menu {
   def menu: List[Product]
 
-<<<<<<< HEAD
-  def show = {
-    println(this) // print menu name (specific of the case class used)
-    (0 until menu.length).foreach(i => println(f"--- $i --- " + menu(i) + "[" + menu(i).energy.toString + " kcal]"))
-    val total_energy = (menu.map(_.energy).foldLeft(0.0)(_ + _)).toFloat
-    println("----- Total energy: " + total_energy + " kcal")
-=======
   def show(){
     println(this) // Print menu type
     (0 until menu.length).foreach(i => println(f"--- $i --- " + menu(i) + "[" + menu(i).energy.toString + " kcal]")) // Print each ingredient
     val total_energy = (menu.map(_.energy).foldLeft(0.0)(_ + _)).toFloat // Compute the total energy amount of the menu
     println("----- Total energy: " + total_energy + " kcal") // Print the total energy amount of the menu
->>>>>>> 3dda9797e19ebc4e007e6c12f7a274bd67fa74b9
   }
 }
 
@@ -88,15 +257,9 @@ case class MenuComposer(products: List[Product], choice: Any) {
     }
   }
 
-<<<<<<< HEAD
   /* Returns a list of <howMany> balanced products 
      Balanced product has this ratio (25% proteins - 40% glucides - 35% lipids)
      with an approx factor of 5% */
-=======
-  /* Return a list of <howMany> balanced products 
-      - Balaned product has this ratio (25% proteins - 40% glucides - 35% lipids)
-        with an approx factor of 5% */
->>>>>>> 3dda9797e19ebc4e007e6c12f7a274bd67fa74b9
   private def getBalancedProducts(howMany: Int): List[Product] = {
     val approx = 0.05
     products.length match {
@@ -116,11 +279,8 @@ case class MenuComposer(products: List[Product], choice: Any) {
     }
   }
 
-<<<<<<< HEAD
   /* Returns a list of <howMany> products where the amount of protein is more than <min_protein> */
-=======
-  /* Return list of products where the amount of protein is more than <min_protein> */
->>>>>>> 3dda9797e19ebc4e007e6c12f7a274bd67fa74b9
+
   private def getProteinProduct(howMany: Int, min_protein: Float): List[Product] = {
     products.length match {
       case n if n > 0 =>
@@ -132,13 +292,7 @@ case class MenuComposer(products: List[Product], choice: Any) {
     }
   }
 
-<<<<<<< HEAD
   /* Returns a list of <howMany> products where the amount of sugar and fat is less than <max_sugar> and <max_fat> */
-=======
-  /* Return list of products where the amount of :
-     - sugar is less than <max_sugar> and
-     - fat is less than  <max_fat> */
->>>>>>> 3dda9797e19ebc4e007e6c12f7a274bd67fa74b9
   private def getHealthyProducts(howMany: Int, max_sugar: Float, max_fat:Float ): List[Product] = {
     products.length match {
       case n if n > 0 =>
@@ -155,11 +309,7 @@ case class MenuComposer(products: List[Product], choice: Any) {
     // PATTERN MATCHING
     choice match {
       case "1" => HealthyMenu(getHealthyProducts(3,5,8),3,5,8)
-<<<<<<< HEAD
       case "2" => ProteinMenu((getProteinProduct(1,20) ++ getRandomProducts(2)),2,20) //Protein menu composed of 1 proteined product and 2 random products
-=======
-      case "2" => ProteinMenu((getProteinProduct(1,25) ++ getBalancedProducts(2)),2,25) //Protein menu composed of 1 proteined product and 2 balanced products
->>>>>>> 3dda9797e19ebc4e007e6c12f7a274bd67fa74b9
       case "3" => SimpleBalancedMenu(getBalancedProducts(1))
       case _ => RandomMenu(getRandomProducts(3),3) // Default (in case user enter other thing than 1,2,3 or 4)
     }
@@ -180,7 +330,7 @@ case class Product(id: Int, name: String, energy: Int, protein: Float,  sugar: F
 /* Extract the products from the file */
 object GastroExtractor {
 
-  def extract(path: String): Try[List[Product]] =
+  def extract(path: String): Either[Throwable, List[Product]] =
     Using(Source.fromFile(path)) { source =>
       (for {
         line <- source.getLines.drop(1) 
@@ -193,5 +343,5 @@ object GastroExtractor {
         cols(6).toFloat,    // total sugar (in g)
         cols(9).toFloat     // total fat (in g)
       )).toList
-    }
+    }.toEither
 }
