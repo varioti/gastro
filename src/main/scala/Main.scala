@@ -31,33 +31,6 @@ object Main {
   }
 
 
-
-/*
-      GastroExtractor.extract("./products.csv") match {
-      case Right(products) => runCli(products)
-      case Left(error) => {
-        println(f"AH ! Something wrong happened while extracting products from the file : $error")
-        val input = scala.io.StdIn.readLine("Press anything to retry.")
-        }
-      }
-    }
-
-  private def runCli(products: List[Product]): Unit = {
-    // Print all menus available 
-    println("Choices:") 
-    println(" [1]: Menu composed by 3 healthy ingredients")
-    println(" [2]: Menu composed by 1 proteined ingredient and 2 others ingredients")
-    println(" [3]: Menu composed by 1 balanced ingredient (25% proteins - 40% glucids - 35% lipids)")
-    println(" [4]: Menu composed by 3 random ingredients")
-    
-    // Loop : ask wich menu user want and print a proposal menu 
-    while (true) {
-      val input = scala.io.StdIn.readLine("What menu do you want ?")
-      MenuComposer(products, input.toString).compose
-    }
-  }*/
-
-
   // ACTORS
   // Coq
   val coq: Behavior[Answer] = Behaviors.setup { context =>
@@ -65,6 +38,8 @@ object Main {
     implicit val ec: ExecutionContext = scala.concurrent.ExecutionContext.global
 
     val intendant = context.spawn(intendantActor, "StatelessActorDoingThings")
+    val proteinDispenser = context.spawn(intendantActor, "StatelessActorDoingThings")
+    val fatDispenser = context.spawn(intendantActor, "StatelessActorDoingThings")
 
     implicit val timeout: Timeout = Timeout(3.seconds)
     implicit val scheduler: Scheduler = context.system.scheduler
@@ -81,6 +56,22 @@ object Main {
         case Success(Answer(Some(value))) => {
           val main_product = value
           println(main_product)
+
+          var products := List[Product] = List()
+          // [3] Ask list of Products to specialized dispensers
+          proteinDispenser.ask(x => Question("protein", x))
+          proteinDispenser ? (Question("protein", _)) onComplete {
+            case Success(Answer(result)) => products = products ++ result
+            case Failure(exception) => println(f"A failure occured: $exception")
+          }
+
+          fatDispenser.ask(x => Question("fat", x))
+          fatDispenser ? (Question("fat", _)) onComplete {
+            case Success(Answer(result)) => products = products ++ result
+            case Failure(exception) => println(f"A failure occured: $exception")
+          }
+          println(products)
+
         }
 
         // Problem during product extraction by the Intendant : Coq must stop this menu
@@ -119,10 +110,10 @@ object Main {
   }
 
   // ProteinDispenser
-  val proteinDispenser: Behavior[Question] = Behaviors.receive { (_, message) =>
+  val proteinDispenserActor: Behavior[Question] = Behaviors.receive { (_, message) =>
     {
       /* Returns a list of <howMany> products where the amount of protein is more than <min_protein> */
-      def selectProteinedProducts(howMany: Int, min_protein: Float): Option[List[Product]] = {
+      def selectProteinedProducts(howMany: Int, min_protein: Float): List[Product] = {
         GastroExtractor.extract("./products.csv") match {
           // Extraction OK -> Select random proteined products and put it in Some
           case Right(products) => {
@@ -130,14 +121,13 @@ object Main {
             // FILTER FUNCTION
             val protein = products.filter(p=>(p.protein > min_protein))
             // Chooses <howMany> random proteined products in this list
-            val selected = for { _ <- List.range(0, howMany) } yield protein(Random.between(0, protein.length))
-            Some(selected)
+            for { _ <- List.range(0, howMany) } yield protein(Random.between(0, protein.length))
           }
 
           // Extraction KO -> Print error and return None
           case Left(error) => {
             println(f"AH ! Something wrong happened while extracting proteined products from the file : $error")
-            None
+            List()
           }
         }
       }
@@ -153,10 +143,10 @@ object Main {
   }
 
   // FatDispenser
-val fatDispenser: Behavior[Question] = Behaviors.receive { (_, message) =>
+  val fatDispenserActor: Behavior[Question] = Behaviors.receive { (_, message) =>
     {
       /* Returns a list of <howMany> products where the amount of fat is more than <min_fat> */
-      def selectFatProducts(howMany: Int, min_fat: Float): Option[List[Product]] = {
+      def selectFatProducts(howMany: Int, min_fat: Float): List[Product] = {
         GastroExtractor.extract("./products.csv") match {
           // Extraction OK -> Select random dat products and put it in Some
           case Right(products) => {
@@ -164,14 +154,13 @@ val fatDispenser: Behavior[Question] = Behaviors.receive { (_, message) =>
             // FILTER FUNCTION
             val fat = products.filter(p=>(p.fat > min_fat))
             // Chooses <howMany> random fat products in this list
-            val selected = for { _ <- List.range(0, howMany) } yield fat(Random.between(0, fat.length))
-            Some(selected)
+            for { _ <- List.range(0, howMany) } yield fat(Random.between(0, fat.length))
           }
 
           // Extraction KO -> Print error and return None
           case Left(error) => {
             println(f"AH ! Something wrong happened while extracting fat products from the file : $error")
-            None
+            List()
           }
         }
       }
