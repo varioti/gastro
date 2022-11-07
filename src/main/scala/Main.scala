@@ -26,7 +26,7 @@ object Main {
     while (true) {
       Thread.sleep(1000) // Let Coq initiate the process for a menu before asking for new menu 
       val input = scala.io.StdIn.readLine("What menu do you want ?")
-      coqActor ! Answer(input) // [1] Ask a menu to the Coq
+      coqActor ! AnyAnswer(input) // [1] Ask a menu to the Coq
     }
   }
 
@@ -46,39 +46,42 @@ object Main {
 
     // [1] Behaviour when receiving an order from client 
     Behaviors.receiveMessage { order => 
-      val menu_type = order.message
-      println(f"Order receiveid for menu $menu_type. Your menu will be ready soon.")
-      
-      // [2] Ask main product to Intendant
-      intendant.ask(x => Question("main product", x))
-      intendant ? (Question("main product", _)) onComplete {
-        // Intendant gived a product to start the menu : Coq can continue
-        case Success(Answer(Some(value))) => {
-          val main_product = value
-          println(main_product)
+      order match {
+        case AnyAnswer(menu_type) => {
+          println(f"Order receiveid for menu $menu_type. Your menu will be ready soon.")
+          
+          // [2] Ask main product to Intendant
+          intendant.ask(x => Question("main product", x))
+          intendant ? (Question("main product", _)) onComplete {
+            // Intendant gived a product to start the menu : Coq can continue
+            case Success(ProductsAnswer(Some(value))) => {
+              val main_product = value
+              println(main_product)
 
-          var products := List[Product] = List()
-          // [3] Ask list of Products to specialized dispensers
-          proteinDispenser.ask(x => Question("protein", x))
-          proteinDispenser ? (Question("protein", _)) onComplete {
-            case Success(Answer(result)) => products = products ++ result
+              var products : List[Product] = List()
+              // [3] Ask list of Products to specialized dispensers
+              proteinDispenser.ask(x => Question("protein", x))
+              proteinDispenser ? (Question("protein", _)) onComplete {
+                case Success(ProductsAnswer(result)) => products = products ++ result
+                case Failure(exception) => println(f"A failure occured: $exception")
+              }
+
+              fatDispenser.ask(x => Question("fat", x))
+              fatDispenser ? (Question("fat", _)) onComplete {
+                case Success(ProductsAnswer(result)) => products = products ++ result
+                case Failure(exception) => println(f"A failure occured: $exception")
+              }
+              println(products)
+
+            }
+
+            // Problem during product extraction by the Intendant : Coq must stop this menu
+            case Success(ProductsAnswer(None)) => println("Please retry with correct products.csv file.")
             case Failure(exception) => println(f"A failure occured: $exception")
           }
-
-          fatDispenser.ask(x => Question("fat", x))
-          fatDispenser ? (Question("fat", _)) onComplete {
-            case Success(Answer(result)) => products = products ++ result
-            case Failure(exception) => println(f"A failure occured: $exception")
-          }
-          println(products)
-
         }
-
-        // Problem during product extraction by the Intendant : Coq must stop this menu
-        case Success(Answer(None)) => println("Please retry with correct products.csv file.")
-        case Failure(exception) => println(f"A failure occured: $exception")
+        Behaviors.same
       }
-      Behaviors.same
     }
   }
 
@@ -103,7 +106,7 @@ object Main {
         // [2] Behaviour when Coq ask a main product
         case Question("main product", sender) =>
           val product = selectProduct()
-          sender ! Answer(product)
+          sender ! AnyAnswer(product)
           Behaviors.same
       }
     }
@@ -136,7 +139,7 @@ object Main {
         // [3] Behavior when Coq ask proteined products
         case Question(_, sender) =>
           val products = selectProteinedProducts(1,20)
-          sender ! Answer(products)
+          sender ! ProductsAnswer(products)
           Behaviors.same
       }
     }
@@ -169,7 +172,7 @@ object Main {
         // [3] Behavior when Coq ask fat products
         case Question(_, sender) =>
           val products = selectFatProducts(1,20)
-          sender ! Answer(products)
+          sender ! ProductsAnswer(products)
           Behaviors.same
       }
     }
@@ -183,7 +186,7 @@ object Main {
       message match {
         case Question(_, sender) =>
           doSomething()
-          sender ! Answer("Done")
+          sender ! AnyAnswer("Done")
           Behaviors.same
       }
     }
@@ -193,7 +196,9 @@ object Main {
 
 sealed trait Communication
 case class Question(message: String, sender: ActorRef[Answer]) extends Communication
-case class Answer(message: Any) extends Communication
+sealed trait Answer
+case class AnyAnswer(message: Any) extends Answer
+case class ProductsAnswer(message: List[Product]) extends Answer
 
 // TRAIT, CASE CLASSES AND HIERARCHY
 /* Each menu has a list of products and a method show used to print 
