@@ -1,13 +1,13 @@
 import scala.io.Source
 import scala.util.{Random, Using, Try, Success, Failure}
 
-import akka.actor.typed.Scheduler
-import akka.actor.typed.ActorSystem
-import akka.actor.typed.{ActorRef, Behavior}
+import akka.actor.typed.{ActorRef, Behavior, Scheduler, ActorSystem}
 import akka.actor.typed.scaladsl.Behaviors
 import akka.util.Timeout
 
-import scala.concurrent.ExecutionContext
+import scala.async.Async._
+
+import scala.concurrent.{Future, ExecutionContext}
 import scala.concurrent.duration.DurationInt
 
 object Main {
@@ -37,12 +37,41 @@ object Main {
     import akka.actor.typed.scaladsl.AskPattern._
     implicit val ec: ExecutionContext = scala.concurrent.ExecutionContext.global
 
-    val intendant = context.spawn(intendantActor, "StatelessActorDoingThings")
-    val proteinDispenser = context.spawn(intendantActor, "StatelessActorDoingThings")
-    val fatDispenser = context.spawn(intendantActor, "StatelessActorDoingThings")
+    val intendant = context.spawn(intendantActor, "intendant")
+    val proteinDispenser = context.spawn(proteinDispenserActor, "proteinDispenser")
+    val fatDispenser = context.spawn(fatDispenserActor, "fatDispenser")
 
     implicit val timeout: Timeout = Timeout(3.seconds)
     implicit val scheduler: Scheduler = context.system.scheduler
+
+    def ask_protein_products() : List[Product] = {
+      proteinDispenser.ask(x => Question("protein", x))
+      var protein = List[Product]()
+      proteinDispenser ? (Question("protein", _)) onComplete {
+        case Success(ProductsAnswer(result)) => protein = result
+        case Failure(exception) => println(f"A failure occured: $exception")
+      }
+      protein
+    }
+
+    def ask_fat_products() : List[Product] = {
+      fatDispenser.ask(x => Question("fat", x))
+      var fat = List[Product]()
+      fatDispenser ? (Question("fat", _)) onComplete {
+        case Success(ProductsAnswer(result)) => fat = result
+        case Failure(exception) => println(f"A failure occured: $exception")
+      }
+      fat
+    }
+
+    def ask_products() : Future[List[Product]] = {
+      val protein = Future {ask_protein_products}
+      val fat = Future {ask_fat_products}
+      for {
+        p <- protein
+        f <- fat
+      } yield (p ::: f)
+    }
 
     // [1] Behaviour when receiving an order from client 
     Behaviors.receiveMessage { order => 
@@ -53,31 +82,18 @@ object Main {
           // [2] Ask main product to Intendant
           intendant.ask(x => Question("main product", x))
           intendant ? (Question("main product", _)) onComplete {
+            // Problem during product extraction by the Intendant : Coq must stop this menu
+            case Success(MainProductAnswer(None)) => println("Please retry with correct products.csv file.")
+            case Failure(exception) => println(f"A failure occured: $exception")
             // Intendant gived a product to start the menu : Coq can continue
-            case Success(ProductsAnswer(Some(value))) => {
+            case Success(MainProductAnswer(Some(value))) => {
               val main_product = value
               println(main_product)
 
-              var products : List[Product] = List()
-              // [3] Ask list of Products to specialized dispensers
-              proteinDispenser.ask(x => Question("protein", x))
-              proteinDispenser ? (Question("protein", _)) onComplete {
-                case Success(ProductsAnswer(result)) => products = products ++ result
-                case Failure(exception) => println(f"A failure occured: $exception")
-              }
-
-              fatDispenser.ask(x => Question("fat", x))
-              fatDispenser ? (Question("fat", _)) onComplete {
-                case Success(ProductsAnswer(result)) => products = products ++ result
-                case Failure(exception) => println(f"A failure occured: $exception")
-              }
-              println(products)
-
+              val side_products = await(ask_products())
+              println(side_products)
+              
             }
-
-            // Problem during product extraction by the Intendant : Coq must stop this menu
-            case Success(ProductsAnswer(None)) => println("Please retry with correct products.csv file.")
-            case Failure(exception) => println(f"A failure occured: $exception")
           }
         }
         Behaviors.same
@@ -106,7 +122,7 @@ object Main {
         // [2] Behaviour when Coq ask a main product
         case Question("main product", sender) =>
           val product = selectProduct()
-          sender ! AnyAnswer(product)
+          sender ! MainProductAnswer(product)
           Behaviors.same
       }
     }
@@ -198,6 +214,7 @@ sealed trait Communication
 case class Question(message: String, sender: ActorRef[Answer]) extends Communication
 sealed trait Answer
 case class AnyAnswer(message: Any) extends Answer
+case class MainProductAnswer(message: Option[Product]) extends Answer
 case class ProductsAnswer(message: List[Product]) extends Answer
 
 // TRAIT, CASE CLASSES AND HIERARCHY
