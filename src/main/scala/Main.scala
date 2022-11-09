@@ -63,15 +63,20 @@ object Main {
     }
 
     def ask_products() : Future[List[Product]] = {
-      val protein : Future[ProductsAnswer] = proteinDispenser.ask(x => Question("protein", x)) match {
-        case Future(ProductsAnswer(products)) => Future {products}
-        case _ => Future {List[Product]()}
-      }
-      val fat : Future[ProductsAnswer] = fatDispenser.ask(x => Question("fat", x))
+      val protein : Future[Answer] = proteinDispenser.ask(x => Question("protein", x))
+      val fat : Future[Answer] = fatDispenser.ask(x => Question("fat", x))
       for {
         p <- protein
         f <- fat
-      } yield p.message ::: f.message
+        val lp : List[Product] = p.message match {
+          case x: List[Product] => x
+          case _ => List[Product]()
+        }
+        val lf : List[Product] = f.message match {
+          case x: List[Product] => x
+          case _ => List[Product]()
+        }
+      } yield lp ::: lf
     }
 
     // [1] Behaviour when receiving an order from client 
