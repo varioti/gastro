@@ -24,7 +24,7 @@ object Main {
     while (true) {
       Thread.sleep(1000) // Let Coq initiate the process for a menu before asking for new menu 
       val input = scala.io.StdIn.readLine("What menu do you want ?")
-      coqActor ! AnyAnswer(input) // [1] Ask a menu to the Coq
+      coqActor ! MenuOrder(input) // [1] Ask a menu to the Coq
     }
   }
 
@@ -42,26 +42,8 @@ object Main {
     implicit val timeout: Timeout = Timeout(3.seconds)
     implicit val scheduler: Scheduler = context.system.scheduler
 
-    def ask_protein_products() : List[Product] = {
-      proteinDispenser.ask(x => Question("protein", x))
-      var protein = List[Product]()
-      proteinDispenser ? (Question("protein", _)) onComplete {
-        case Success(ProductsAnswer(result)) => protein = result
-        case Failure(exception) => println(f"A failure occured: $exception")
-      }
-      protein
-    }
-
-    def ask_fat_products() : List[Product] = {
-      fatDispenser.ask(x => Question("fat", x))
-      var fat = List[Product]()
-      fatDispenser ? (Question("fat", _)) onComplete {
-        case Success(ProductsAnswer(result)) => fat = result
-        case Failure(exception) => println(f"A failure occured: $exception")
-      }
-      fat
-    }
-
+    /* Ask to all dispensers  some of them products and returns a Future merged list of all products
+       Note: Because Future are used, nothing is blocking inside this function */
     def ask_products() : Future[List[Product]] = {
       val protein : Future[Answer] = proteinDispenser.ask(x => Question("protein", x))
       val fat : Future[Answer] = fatDispenser.ask(x => Question("fat", x))
@@ -82,7 +64,7 @@ object Main {
     // [1] Behaviour when receiving an order from client 
     Behaviors.receiveMessage { order => 
       order match {
-        case AnyAnswer(menu_type) => {
+        case MenuOrder(menu_type) => {
           println(f"Order receiveid for menu $menu_type. Your menu will be ready soon.")
           
           // [2] Ask main product to Intendant
@@ -96,9 +78,9 @@ object Main {
               val main_product = value
               println(main_product)
 
-              val answer = ask_products()
+              // [3] Ask side products to all dispensers
+              val side_products = Await.result(ask_products(), 10.second)
               println(answer)
-              
             }
           }
         }
@@ -182,7 +164,7 @@ object Main {
             for { _ <- List.range(0, howMany) } yield fat(Random.between(0, fat.length))
           }
 
-          // Extraction KO -> Print error and return None
+          // Extraction KO -> Print error and return Empty list
           case Left(error) => {
             println(f"AH ! Something wrong happened while extracting fat products from the file : $error")
             List()
@@ -208,7 +190,7 @@ object Main {
       message match {
         case Question(_, sender) =>
           doSomething()
-          sender ! AnyAnswer("Done")
+          sender ! MenuOrder("Done")
           Behaviors.same
       }
     }
@@ -221,7 +203,7 @@ case class Question(message: String, sender: ActorRef[Answer]) extends Communica
 sealed trait Answer {
   def message: Any
 }
-case class AnyAnswer(message: Any) extends Answer
+case class MenuOrder(message: Any) extends Answer
 case class MainProductAnswer(message: Option[Product]) extends Answer
 case class ProductsAnswer(message: List[Product]) extends Answer
 
