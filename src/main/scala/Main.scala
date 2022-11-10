@@ -44,9 +44,9 @@ object Main {
 
     /* Ask to all dispensers  some of them products and returns a Future merged list of all products
        Note: Because Future are used, nothing is blocking inside this function */
-    def ask_products() : Future[List[Product]] = {
-      val protein : Future[Answer] = proteinDispenser.ask(x => Question("protein", x))
-      val fat : Future[Answer] = fatDispenser.ask(x => Question("fat", x))
+    def ask_products : Future[List[Product]] = {
+      val protein : Future[Answer] = proteinDispenser.ask(x => Request("protein", x))
+      val fat : Future[Answer] = fatDispenser.ask(x => Request("fat", x))
       for {
         p <- protein
         f <- fat
@@ -61,6 +61,11 @@ object Main {
       } yield lp ::: lf
     }
 
+    /* Choose which side ingredients will compose the menu in addition of the main product */
+    def choose_products(main_product: Product, side_products: List[Product]) : List[Product] = {
+      main_product :: side_products
+    }
+
     // [1] Behaviour when receiving an order from client 
     Behaviors.receiveMessage { order => 
       order match {
@@ -68,8 +73,8 @@ object Main {
           println(f"Order receiveid for menu $menu_type. Your menu will be ready soon.")
           
           // [2] Ask main product to Intendant
-          intendant.ask(x => Question("main product", x))
-          intendant ? (Question("main product", _)) onComplete {
+          intendant.ask(x => Request("main product", x))
+          intendant ? (Request("main product", _)) onComplete {
             // Problem during product extraction by the Intendant : Coq must stop this menu
             case Success(MainProductAnswer(None)) => println("Please retry with correct products.csv file.")
             case Failure(exception) => println(f"A failure occured: $exception")
@@ -79,8 +84,23 @@ object Main {
               println(main_product)
 
               // [3] Ask side products to all dispensers
-              val side_products = Await.result(ask_products(), 10.second)
-              println(answer)
+              val side_products = Await.result(ask_products, 10.second)
+
+              // [4] Coq choose the final ingredients and 
+              val ingredients = choose_products(main_product, side_products)
+
+              // [5] Ask portions to intendant
+              intendant.ask(x => QTTRequest(ingredients, x))
+              intendant ? (QTTRequest(ingredients, _)) onComplete {
+                case Success(PortionsAnswer(portions)) => {
+                  println(ingredients)
+                  println(portions)
+                }
+                case Failure(exception) => {
+                  println(f"A failure occured while getting the portions: $exception")
+                  println(ingredients)
+                }
+              }
             }
           }
         }
@@ -106,18 +126,56 @@ object Main {
         }
       }
 
+      /* Get the quantity of each product in ref and return a new list of produts with the new quantities 
+         Note: if no quantities found in file, quantity of the product remains 1*/
+      def getQTT(ref: List[Product]) : List[String] = {
+          GastroExtractor.extractQTT("./portions.csv") match {
+            // Extraction KO -> Print error and return the initial list (with all portions to 1)
+            case Left(error) => {
+              println(f"AH ! Something wrong happened while extracting portions from the file : $error")
+              ref.map( _ => "1" )
+
+            }
+          // Extraction OK -> Choose randomly a qtt
+          case Right(portions) => {
+            for {
+              product <- ref
+              val qtts = findQTT(product, portions)
+              val chosen_qtt = qtts.length match {
+                case 0 => "1"
+                case n => qtts(Random.between(0, n))
+              }
+            } yield chosen_qtt
+          }
+        }
+      }
+
+      /* For a product, search all qtt available in portions */
+      def findQTT(refProduct:Product, portions:List[Portion]) : List[String] = {
+        for {
+          p <- portions
+          if p.id == refProduct.id
+        } yield p.name
+      }
+
       message match {
         // [2] Behaviour when Coq ask a main product
-        case Question("main product", sender) =>
+        case Request("main product", sender) =>
           val product = selectProduct()
           sender ! MainProductAnswer(product)
+          Behaviors.same
+
+        // [5] Behaviour when Coq ask portions
+        case QTTRequest(products, sender) =>
+          val qtt = getQTT(products)
+          sender ! PortionsAnswer(qtt)
           Behaviors.same
       }
     }
   }
 
   // ProteinDispenser
-  val proteinDispenserActor: Behavior[Question] = Behaviors.receive { (_, message) =>
+  val proteinDispenserActor: Behavior[Request] = Behaviors.receive { (_, message) =>
     {
       /* Returns a list of <howMany> products where the amount of protein is more than <min_protein> */
       def selectProteinedProducts(howMany: Int, min_protein: Float): List[Product] = {
@@ -141,7 +199,7 @@ object Main {
 
       message match {
         // [3] Behavior when Coq ask proteined products
-        case Question(_, sender) =>
+        case Request(_, sender) =>
           val products = selectProteinedProducts(1,20)
           sender ! ProductsAnswer(products)
           Behaviors.same
@@ -150,7 +208,7 @@ object Main {
   }
 
   // FatDispenser
-  val fatDispenserActor: Behavior[Question] = Behaviors.receive { (_, message) =>
+  val fatDispenserActor: Behavior[Request] = Behaviors.receive { (_, message) =>
     {
       /* Returns a list of <howMany> products where the amount of fat is more than <min_fat> */
       def selectFatProducts(howMany: Int, min_fat: Float): List[Product] = {
@@ -174,7 +232,7 @@ object Main {
 
       message match {
         // [3] Behavior when Coq ask fat products
-        case Question(_, sender) =>
+        case Request(_, sender) =>
           val products = selectFatProducts(1,20)
           sender ! ProductsAnswer(products)
           Behaviors.same
@@ -183,12 +241,12 @@ object Main {
   }
 
   // SugarDispenser
-  val sugarDispenser: Behavior[Question] = Behaviors.receive { (_, message) =>
+  val sugarDispenser: Behavior[Request] = Behaviors.receive { (_, message) =>
     {
       def doSomething(): Unit = println(f"doing something...")
 
       message match {
-        case Question(_, sender) =>
+        case Request(_, sender) =>
           doSomething()
           sender ! MenuOrder("Done")
           Behaviors.same
@@ -198,14 +256,20 @@ object Main {
 
 }
 
-sealed trait Communication
-case class Question(message: String, sender: ActorRef[Answer]) extends Communication
+sealed trait Question {
+  def message: Any
+  def sender: ActorRef[Answer]
+}
+case class Request(message: String, sender: ActorRef[Answer]) extends Question
+case class QTTRequest(message: List[Product], sender: ActorRef[Answer]) extends Question
+
 sealed trait Answer {
   def message: Any
 }
 case class MenuOrder(message: Any) extends Answer
 case class MainProductAnswer(message: Option[Product]) extends Answer
 case class ProductsAnswer(message: List[Product]) extends Answer
+case class PortionsAnswer(message: List[String]) extends Answer
 
 // TRAIT, CASE CLASSES AND HIERARCHY
 /* Each menu has a list of products and a method show used to print 
@@ -328,6 +392,9 @@ case class Product(id: Int, name: String, energy: Int, protein: Float,  sugar: F
   override def toString: String = f"$name [${id.toString}]"
 }
 
+/* Represent a portion with needed parameters for the composer */
+case class Portion(id: Int, name: String, qtt: Float)
+
 /* Extract the products from the file */
 object GastroExtractor {
 
@@ -343,6 +410,19 @@ object GastroExtractor {
         cols(5).toFloat,    // total protein (in g)
         cols(6).toFloat,    // total sugar (in g)
         cols(9).toFloat     // total fat (in g)
+      )).toList
+    }.toEither
+
+  /* Extract the portions from the file */
+  def extractQTT(path: String): Either[Throwable, List[Portion]] =
+    Using(Source.fromFile(path)) { source =>
+      (for {
+        line <- source.getLines.drop(1) 
+        cols = line.split(";")
+      } yield Portion(
+        cols(0).toInt,      // id
+        cols(7),            // name
+        cols(8).replace(",",".").toFloat,    // weight (in g)
       )).toList
     }.toEither
 }
