@@ -5,9 +5,7 @@ import akka.actor.typed.{ActorRef, Behavior, Scheduler, ActorSystem}
 import akka.actor.typed.scaladsl.Behaviors
 import akka.util.Timeout
 
-import scala.async.Async._
-
-import scala.concurrent.{Future, ExecutionContext}
+import scala.concurrent.{Future, ExecutionContext, Await}
 import scala.concurrent.duration.DurationInt
 
 object Main {
@@ -65,12 +63,15 @@ object Main {
     }
 
     def ask_products() : Future[List[Product]] = {
-      val protein = Future {ask_protein_products}
-      val fat = Future {ask_fat_products}
+      val protein : Future[ProductsAnswer] = proteinDispenser.ask(x => Question("protein", x)) match {
+        case Future(ProductsAnswer(products)) => Future {products}
+        case _ => Future {List[Product]()}
+      }
+      val fat : Future[ProductsAnswer] = fatDispenser.ask(x => Question("fat", x))
       for {
         p <- protein
         f <- fat
-      } yield (p ::: f)
+      } yield p.message ::: f.message
     }
 
     // [1] Behaviour when receiving an order from client 
@@ -90,8 +91,8 @@ object Main {
               val main_product = value
               println(main_product)
 
-              val side_products = await(ask_products())
-              println(side_products)
+              val answer = ask_products()
+              println(answer)
               
             }
           }
@@ -212,7 +213,9 @@ object Main {
 
 sealed trait Communication
 case class Question(message: String, sender: ActorRef[Answer]) extends Communication
-sealed trait Answer
+sealed trait Answer {
+  def message: Any
+}
 case class AnyAnswer(message: Any) extends Answer
 case class MainProductAnswer(message: Option[Product]) extends Answer
 case class ProductsAnswer(message: List[Product]) extends Answer
