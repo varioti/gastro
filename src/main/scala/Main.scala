@@ -22,7 +22,7 @@ object Main {
     println(" [4]: Menu composed by 3 random ingredients")
 
     while (true) {
-      Thread.sleep(1000) // Let Coq initiate the process for a menu before asking for new menu 
+      Thread.sleep(100) // Let Coq initiate the process for a menu before asking for new menu 
       val input = scala.io.StdIn.readLine("What menu do you want ?")
       coqActor ! MenuOrder(input) // [1] Ask a menu to the Coq
     }
@@ -38,6 +38,7 @@ object Main {
     val intendant = context.spawn(intendantActor, "intendant")
     val proteinDispenser = context.spawn(proteinDispenserActor, "proteinDispenser")
     val fatDispenser = context.spawn(fatDispenserActor, "fatDispenser")
+    val sugarDispenser = context.spawn(sugarDispenserActor, "sugarDispenser")
 
     implicit val timeout: Timeout = Timeout(3.seconds)
     implicit val scheduler: Scheduler = context.system.scheduler
@@ -47,9 +48,11 @@ object Main {
     def ask_products : Future[List[Product]] = {
       val protein : Future[Answer] = proteinDispenser.ask(x => Request("protein", x))
       val fat : Future[Answer] = fatDispenser.ask(x => Request("fat", x))
+      val sugar : Future[Answer] = sugarDispenser.ask(x => Request("sugar", x))
       for {
         p <- protein
         f <- fat
+        s <- sugar
         val lp : List[Product] = p.message match {
           case x: List[Product] => x
           case _ => List[Product]()
@@ -58,7 +61,11 @@ object Main {
           case x: List[Product] => x
           case _ => List[Product]()
         }
-      } yield lp ::: lf
+        val ls : List[Product] = s.message match {
+          case x: List[Product] => x
+          case _ => List[Product]()
+        }
+      } yield lp ::: lf ::: ls
     }
 
     /* Choose which side ingredients will compose the menu in addition of the main product */
@@ -241,14 +248,33 @@ object Main {
   }
 
   // SugarDispenser
-  val sugarDispenser: Behavior[Request] = Behaviors.receive { (_, message) =>
+  val sugarDispenserActor: Behavior[Request] = Behaviors.receive { (_, message) =>
     {
-      def doSomething(): Unit = println(f"doing something...")
+      /* Returns a list of <howMany> products where the amount of sugar is more than <min_sugar> */
+      def selectFatProducts(howMany: Int, min_sugar: Float): List[Product] = {
+        GastroExtractor.extract("./products.csv") match {
+          // Extraction OK -> Select random sugar products and put it in Some
+          case Right(products) => {
+            products.filter(p=>(p.sugar > min_sugar))
+            // FILTER FUNCTION
+            val sugar = products.filter(p=>(p.sugar > min_sugar))
+            // Chooses <howMany> random fat products in this list
+            for { _ <- List.range(0, howMany) } yield sugar(Random.between(0, sugar.length))
+          }
+
+          // Extraction KO -> Print error and return Empty list
+          case Left(error) => {
+            println(f"AH ! Something wrong happened while extracting sugar products from the file : $error")
+            List()
+          }
+        }
+      }
 
       message match {
+        // [3] Behavior when Coq ask fat products
         case Request(_, sender) =>
-          doSomething()
-          sender ! MenuOrder("Done")
+          val products = selectFatProducts(1,20)
+          sender ! ProductsAnswer(products)
           Behaviors.same
       }
     }
