@@ -212,10 +212,11 @@ object Main {
 
       /* For a product, search all qtt available in portions */
       def findQTT(refProduct:Product, portions:List[Portion]) : List[String] = {
-        for {
-          p <- portions
-          if p.id == refProduct.id
-        } yield p.name
+        // FOR COMPREHENSION => MAP AND FILTER
+        /* 
+          for { p <- portions if p.id == refProduct.id } yield p.name
+        */
+        portions filter (p => p.id == refProduct.id) map (p => p.name)
       }
 
       message match {
